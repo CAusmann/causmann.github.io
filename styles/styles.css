@@ -1,8 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 button {
     color: blueviolet;
     
 }
 
 body header {
-    background-image: url(/pictures/me.jpeg)
+    text-align: center;
+    padding: 50px;
+    background-image: url(/pictures/header_background.jpg)
 }
