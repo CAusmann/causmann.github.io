@@ -1,3 +1,8 @@
-body {
-    background-color: aqua;
+button {
+    color: blueviolet;
+    
+}
+
+body header {
+    background-image: url(/pictures/me.jpeg)
 }
