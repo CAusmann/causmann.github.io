@@ -1,16 +1,72 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-button {
-    color: blueviolet;
+
+/* BODY */
+body {
+    background-image: url(../pictures/tim-mossholder-_YwD-QZMW8c-unsplash.jpg);
+    background-size: auto;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-image: url(../pictures/header_background.jpg);
+    background-size: 100%;
+    height: 225px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header nav a {
+    background-color: transparent;
+    border: 0;
+    color: gainsboro;
+    padding: 15x;
+    margin: 0 25px 0 25px;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform:uppercase;
     
 }
 
-body header {
+#logo {
+    height: 150px;
+    padding: 10px;
+    border-radius: 90px;
+}
+
+/* CLASSES AND MODS */
+.nav_button:hover {
+    background-color: gainsboro;
+    color: gray;
+    font-size: 22px;
+    border-radius: 25px;
+    padding: 0px 25px 0px 25px; 
+}
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    columns: 4;
+}
+
+.container .box {
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.container .caption {
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px;
     text-align: center;
-    padding: 100px;
-    background-image: url(/pictures/header_background.jpg);
-    background-size: 100%;
+}
+
+.container .box img {
+    max-width: 100%;
+    border-radius: 15px;
 }
