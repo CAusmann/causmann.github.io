@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    background-image: url(../pictures/monochromatic-pattern-with-crosses-circles_1060-46.jpg);
+    background-size: cover;
+    padding-bottom: 15px;
+    background-repeat: repeat;
+}
+
+header {
+    background-color: transparent;
+    text-align: center;
+    padding: 25px;
+    padding-top: 50px;
+    background-size: 100%;
+    height: 100px;
+}
+
+header nav a {
+    background-color: transparent;
+    color: black;
+    padding: 50px;
+    margin: 0 25px 0 25px;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform:uppercase;
+    letter-spacing: 5px;    
+}
+
+/* CLASSES AND MODS */
+/* IDs */
+
+
+/* Classes */
+.blur {
+    background-color: rgb(133, 133, 133, 0.4);
+    padding-top: 15px;
+    border-radius: 15px;
+    margin: 0px 190px;
+}
+
+.zoom:hover {
+    transform: scale(1.28);
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.container {
+    margin: 30px 50px;
+    columns: 3;
+}
+
+.container img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.nav_button:hover {
+    background-color: rgba(75, 75, 75, 0.5);
+    color: white;
+    font-size: 22px;
+    border-radius: 25px;
+    padding: 5px 50px 5px 50px; 
+}
+
+.scroll_container{
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+    max-height: 750px; 
+}
+
+.title_container h1 {
+    background-color: transparent;
+    color: black;
+    font-family: monospace;
+    font-size: 75px;
+    letter-spacing: 7px;
+    padding-top: 50px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+/* ANIMATIONS */

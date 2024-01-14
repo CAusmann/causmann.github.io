@@ -4,28 +4,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>Test</title>
         <link rel="stylesheet" href="/styles/styles.css">
     </head>
 
     <body>
         <header>
             <nav>
-                <a href="index.html"><img id="logo" src="pictures/me.jpeg"></a>
                 <ul>
                     <a class="nav_button" href="index.html">Home</a>
-                    <a class="nav_button" href="pages/links.html">Links</a>
-                    <a class="nav_button" href="pages/gallery.html">Gallery</a>
-                    <a class="nav_button" href="pages/about.html">about</a>
+                    <a class="nav_button" href="/pages/links.html">Links</a>
+                    <a class="nav_button" href="/pages/gallery.html">Gallery</a>
+                    <a class="nav_button" href="/pages/about.html">about</a>
                 </ul>
             </nav>
         </header>
-    
         <section>
+            <div class="welcome_container">
+                <h1><span class="auto-type"></span></h1>
+            </div>
+        </section>
+        <section class="newblock">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum dicta autem quod, aperiam, necessitatibus beatae dolorem enim quisquam hic earum incidunt odio. Optio officia tenetur dolor harum. Minima, aliquam alias.</p>
         </section>
     
         <footer>
 
         </footer>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        
+        <script>
+            var type = new Typed(".auto-type", {
+                strings: ["Hello There, Welcome :)"],
+                typeSpeed: 50,
+                loop: false
+            })
+        </script>
+    
     </body>
 </html>
