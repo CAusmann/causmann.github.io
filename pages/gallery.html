@@ -4,14 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="/styles/styles.css">
+        <title>Test</title>
+        <link rel="stylesheet" href="/styles/styles_gallery.css">
     </head>
 
     <body>
         <header>
             <nav>
-                <a href="../index.html"><img id="logo" src="../pictures/me.jpeg"></a>
                 <ul>
                     <a class="nav_button" href="../index.html">Home</a>
                     <a class="nav_button" href="links.html">Links</a>
@@ -20,24 +19,41 @@
                 </ul>
             </nav>
         </header>
-    
         <section>
-            <div class="container">
-                <div class="box caption">
-                    <img src="../pictures/Airplane 2024-01-12 23_28_45.JPG">
-                    <p>This is a test of what the text will look like!</p>
-                </div>
-                <div class="box"><img src="../pictures/Bday_2024-01-12_23_22_19.jpg"></div>
-                <div class="box"><img src="../pictures/Blue_peace 2024-01-12 23_29_06.jpg"></div>
-                <div class="box"><img src="../pictures/Bored 2024-01-12 23_50_34.jpeg"></div>
-                <div class="box"><img src="../pictures/Ocean_eyes 2024-01-12 23_30_39.JPG"></div>
-                <div class="box"><img src="../pictures/Suit 2024-01-12 23_22_51.JPG"></div>
-                <div class="box"><img src="../pictures/Wand 2024-01-12 23_27_51.JPG"></div>
+            <div class="title_container">
+                <h1><span class="auto-type"></span></h1>
             </div>
         </section>
-    
+
+        <section class="blur scroll_container"">
+            <div class="container">
+                <div class="zoom"><img src="../pictures/Airplane 2024-01-12 23_28_45.JPG"></div>
+                <div class="zoom"><img src="../pictures/Bday_2024-01-12_23_22_19.jpg" alt="Blowing out Birthday Candles on my 20th Birthday"></div>
+                <div class="zoom"><img src="../pictures/Blue_peace 2024-01-12 23_29_06.jpg"></div>
+                <div class="zoom"><img src="../pictures/Bored 2024-01-12 23_50_34.jpeg"></div>
+                <div class="zoom"><img src="../pictures/Ocean_eyes 2024-01-12 23_30_39.JPG"></div>
+                <div class="zoom"><img src="../pictures/Suit 2024-01-12 23_22_51.JPG"></div>
+                <div class="zoom"><img src="../pictures/Wand 2024-01-12 23_27_51.JPG"></div>
+                <div class="zoom"><img src="../pictures/IMG_2347.jpeg"></div>
+            </div>
+        </section>
+
         <footer>
 
         </footer>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        
+        <script>
+            var type = new Typed(".auto-type", {
+                strings: ["Gallery"],
+                typeSpeed: 79,
+                loop: false
+            })
+        </script>
     </body>
 </html>
+
+
+
+
