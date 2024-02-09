@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Links - Cameron Ausmann</title>
+<link rel="stylesheet" href="Links%20-%20Cameron%20Ausmann_files/styles.css"></head>
+<body class="fade_in links_page" style="background-image: linear-gradient(to bottom right, #ee98c4, #a77ccb); overflow: hidden">
+    <header>
+        <nav>
+            <a href="http://127.0.0.1:5500/causmann.github.io/index.html">Home</a>
+            <a href="http://127.0.0.1:5500/causmann.github.io/pages/projects.html">Projects</a>
+            <a href="http://127.0.0.1:5500/causmann.github.io/pages/links.html">Links</a>
+            <a href="http://127.0.0.1:5500/causmann.github.io/pages/aboutme.html">About Me</a>
+            <a href="http://127.0.0.1:5500/causmann.github.io/pages/contactme.html">Contact Me</a>
+        </nav>
+        <div class="title_container">
+            <h1><span class="auto-type">Links</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></h1>
+        </div>        
+        <script src="Links%20-%20Cameron%20Ausmann_files/typed.umd.js"></script>
+        
+        <script>
+            var type = new Typed(".auto-type", {
+                strings: ["Links"],
+                typeSpeed: 85,
+                loop: false
+            })
+        </script>
+    </header><style data-typed-js-cursor-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
+    <div class="links_map">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#F2F4F8" d="M70.3,-22.3C79.9,6.7,68.8,43,48.1,55.4C27.5,67.9,-2.6,56.5,-26.5,38.7C-50.3,20.8,-67.8,-3.4,-62.3,-26.8C-56.9,-50.1,-28.4,-72.6,1,-72.9C30.4,-73.2,60.7,-51.4,70.3,-22.3Z" transform="translate(100 100)"></path>
+        </svg>
+        <div class="links_box">
+            <section><p id="links_sectionTitle">Gallery</p></section>
+            <div class="links_galleryContainer"><img src="Links%20-%20Cameron%20Ausmann_files/Wand%202024-01-12%2023_27_51%20copy.JPG"></div>
+        </div>
+        <div class="links_dots">
+            <a href="https://www.instagram.com/ausmanncameron/" target="_blank"><img src="Links%20-%20Cameron%20Ausmann_files/instagramlogo.jpg" class="dot" id="links_scoochRight"></a>
+            <a href="https://twitter.com/AusmannCameron" target="_blank"><img src="Links%20-%20Cameron%20Ausmann_files/xlogo.jpg" class="dot"></a>
+            <a href="https://github.com/CAusmann" target="_blank"><img src="Links%20-%20Cameron%20Ausmann_files/githublogo.svg" class="dot" id="links_scoochRight"></a>
+        </div>   
+        <img id="links_picture" src="Links%20-%20Cameron%20Ausmann_files/Suit_2024-01-12_23_22_51-removebg-preview.png">
+        <div class="links_dots" id="links_scooch">
+            <a href="https://www.linkedin.com/in/cameron-ausmann-23128a269/" target="_blank"><img src="Links%20-%20Cameron%20Ausmann_files/linkedinlogo.png" class="dot"></a>
+            <a href="http://127.0.0.1:5500/causmann.github.io/files/Cameron_Ausmann%20-%20Resume.docx" download=""><img src="Links%20-%20Cameron%20Ausmann_files/resumelogo.png" class="dot" id="links_scoochRight"></a>
+            <a href="mailto:ausmanncameron@gmail.com"><img src="Links%20-%20Cameron%20Ausmann_files/emaillogo.png" class="dot"></a>
+        </div>
+        <div class="links_box">
+            <section><p id="links_sectionTitle">Resources</p></section>
+        </div>
+    </div>   
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

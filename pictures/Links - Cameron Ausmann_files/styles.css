@@ -82,14 +82,6 @@ nav a:hover:after {
     margin-right: 50%;
 }
 
-.dot{
-    margin-top: 75px;
-    height: 75px;
-    width: 75px;
-    background-color: rgba(255,255,255,0.7);
-    border-radius: 50%;
-}
-
 .fade_in {
     animation: fadeIn 1.5s;
 }
@@ -107,26 +99,15 @@ nav a:hover:after {
 }
 
 .links_box {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: rgba(255,255,255,0.7);
+    overflow: scroll;
+    background-color:white;
     color:black;
     height: 500px;
     width: 375px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 20px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.links_box::-webkit-scrollbar {
-    display: none;
-}
-
-.links_box p {
-    padding-bottom: 100px;
 }
 
 .links_dots {
@@ -137,31 +118,17 @@ nav a:hover:after {
     height: 500px;
 }
 
-.links_galleryContainer {
+.dot{
     margin-top: 75px;
-    column-count: 2;
-    column-gap: 0px;
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    border-radius: 50%;
 }
 
-
-.links_galleryItem {
-    display: Inline-block;
-    width: 100%;
-    padding: 5px;
-    border-radius: 75px;
-    transition: transform .2s;
-}
-
-.links_galleryItem:hover {
-    -ms-transform: scale(1.15);
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15); 
-}
-
-.links_galleryItem img {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
+.links_galleryContainer {
+    display: grid;
+    background-color: lime;
 }
 
 .links_page {
@@ -173,17 +140,12 @@ nav a:hover:after {
 }
 
 .links_page section{
-    background-color: white;
+    background-color: red;
     height: 75px;
     line-height: 75px;
     text-align: center;
     font-size: 35px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: fixed;
-    padding-right: 113px;
-    padding-left: 113px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
 }
 
 .links_map {
@@ -274,10 +236,6 @@ nav a:hover:after {
     z-index: -1;
 }
 
-#links_scoochBox {
-    margin-left: 80px;
-}
-
 #links_scoochRight {
     margin-left: 60px;
 }
@@ -288,12 +246,7 @@ nav a:hover:after {
 
 #links_sectionTitle {
     text-transform: uppercase;
-}
-
-#links_scoochBox p {
-    text-transform: uppercase;
-    padding-left: 26px;
-    padding-right: 26px;
+    position: sticky;
 }
 
 #sec1 {
