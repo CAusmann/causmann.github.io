@@ -103,6 +103,11 @@ nav a:hover:after {
     background-color: rgb(38, 37, 44);
 }
 
+.index a {
+    color: white;
+
+}
+
 .index img {
     position: relative;
     height: 750px;
@@ -110,9 +115,24 @@ nav a:hover:after {
     background-color: transparent;
 }
 
-.index a {
-    color: white;
+.index_contactMe {
+    display: inline-flexbox;
+    align-items: center;
+}
 
+.index_welcomeContainer h1 {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    border-spacing: 50px;
+    font-family: monospace;
+    font-size: 75px;
+    letter-spacing: 7px;
+    bottom: 400px;
+    left: 900px;
+    height: 100px;
+    margin-right: 100px;
 }
 
 .links_box {
@@ -208,20 +228,7 @@ nav a:hover:after {
     z-index: -1;
 }
 
-.welcome_container h1 {
-    position: absolute;
-    display: inline-block;
-    background-color: transparent;
-    color: white;
-    border-spacing: 50px;
-    font-family: monospace;
-    font-size: 75px;
-    letter-spacing: 7px;
-    bottom: 400px;
-    left: 900px;
-    height: 100px;
-    margin-right: 100px;
-}
+
 
 .title_container h1 {
     display: block;
@@ -277,6 +284,86 @@ nav a:hover:after {
     mask-position:center;
     mask-size: 100%;
     z-index: 2;
+}
+
+#index_contactChat {
+    margin-right: -125px;
+    text-align: center;
+}
+
+#index_contactEmail {
+    width: 365px;
+    padding: 3px;
+}
+
+#index_contactLets {
+    margin-left: -125px;
+    text-align: center;
+}
+
+#index_contactMap {
+    display: inline-block;
+    background-color: #febc42;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 250px;
+    border-width: 10px;
+    border-color: #dd9f2e;
+    border-style:double;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#index_contactMap h1 {
+    font-size: 75px;
+}
+
+#index_contactMap input {
+    background-color: #fff5de;
+    border-radius: 15px;
+    font-size: 24px;
+}   
+
+#index_contactMessage {
+    padding: 5px;
+    width: 475px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+#index_contactName {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+#index_contactNav {
+    background-color: greenyellow;
+}
+
+#index_contactPhoneNumber {
+    width: 300px;
+    padding: 3px;
+}
+
+#index_contactSend {
+    background-color:#fff2da;
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+#index_contactSkills {
+    background-color:cyan;
+}
+
+#index_contactSubject {
+    margin-top: 50px;
+    width: 475px;
+    padding: 5px;
 }
 
 #links_picture {
