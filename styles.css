@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
 
 html {
     scroll-behavior: smooth;
@@ -71,12 +75,7 @@ nav a:hover:after {
 
 .blank_space a {
     text-decoration: none;
-    color: rgb(38, 37, 44);
-}
-
-.blank_space a:hover {
-    transform: scale(1.25);
-    transition: transform 0.3s ease;
+    font-weight: bold;
 }
 
 .blank_space p {
