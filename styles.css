@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -63,45 +64,32 @@ nav a:hover:after {
 
 /* CLASSES */
 
-.bar {
-    background: #353b48;
-    display: block;
-    height: 25px;
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
-}
-
-.bar:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.bar span {
-    height: 25px;
-    float: left;
-    background: linear-gradient(135deg, #ffc457 0%, #fcb126 100%);
-    border-radius: 20px;
-}
-
-
 .blank_space {
-    margin: -100px;
-    height: 600px;
-    padding-top: 100px;
+    margin: -110px;
+    height: 800px;
+}
+
+.blank_space a {
+    text-decoration: none;
+    color: rgb(38, 37, 44);
+}
+
+.blank_space a:hover {
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
 }
 
 .blank_space p {
+    line-height: 25px;
+    padding-top: 10px;
     margin-left: 300px;
     margin-right: 52%;
-    margin-top: 25px;
 }
 
 .blank_space svg {
     position: absolute;
     opacity: 0.8;
-    top: 1250px;
+    top: 1375px;
     right: 50px;
     height: 800px;
     z-index: 1;
@@ -120,6 +108,14 @@ nav a:hover:after {
     background-color: #fff;
     border-radius: 50%;
 }
+
+.dot:hover {
+    transition: transform .2s;
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+}
+
 
 .drop {
     display: none;
@@ -151,15 +147,19 @@ nav a:hover:after {
     content: "";
     position: absolute;
     width: 0;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 30px solid #fcb126;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid #fcb126;
     top: -22px;
   }
 
 .fade_in {
     animation: fadeIn 1.5s;
+}
+
+.fade_out {
+    animation: fadeOut 1.5s;
 }
 
 .index {
@@ -183,57 +183,68 @@ nav a:hover:after {
     align-items: center;
 }
 
-.index_skills {
-    list-style-type: none;
-    display: inline-flexbox;
-    font-size: 20px;
-    padding-top: 50px;
+.index_skillBar {
+    height: 14px;
+    background: #3f3e3e;
+    border-radius: 9px;
+    margin-left: 100px;
 }
 
-.index_skills h1 {
+.index_skillName {
+    font-size: 21px; 
+    font-weight: 700;
+    color: #f1f1f1;
+    padding-top: 30px;
+    margin: 10px 0;
+    margin-left: 100px;
+}
+
+.index_skillPercentage {
+    height: 14px;
+    color: black;
+    background: rgb(252,177,38);
+    background: linear-gradient(90deg, rgba(252,177,38,1) 0%, rgb(236, 203, 125) 35%, rgba(255,165,0,1) 100%);    border-radius: 3px;
+    position: relative;
+    animation: fillBar 2.5s ease-in-out forwards;
+}
+
+.index_skillPercentage::before { 
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.index_skillPercentage::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+.index_skillsSection {
+    width: 100%;
+    max-width: 1750px;
+    padding: 0 20px;
+}
+
+.index_skillsSection h1 {
     color: rgb(38, 37, 44);
     margin-left: 12%;
     font-size: 40px;
     padding: 30px 10px;
 }   
-
-.index_skillsC {
-    width:  50%;
-    animation: skillsC 3s;
-}
-
-.index_skillsCpp {
-    width:  40%;
-    animation: skillsCpp 3s;
-}
-
-.index_skillsCss{
-    width:  80%;
-    animation: skillsCss 3s;
-}
-
-.index_skillsHtml {
-    width:  90%;
-    animation: skillsHtml 3s;
-}
-
-.index_skillsJavascript {
-    width: 65%;
-    animation: skillsJavascript 3s;
-}
-
-.index_skills li {
-    display: inline-block;
-    width: 45%;
-    line-height: 75px;
-    line-break: auto;
-    padding: 10px;
-}
-
-.index_skillsPython {
-    width: 70%;
-    animation: skillsPython 3s;
-}
 
 .index_welcomeContainer h1 {
     position: absolute;
@@ -370,8 +381,6 @@ nav a:hover:after {
 /* IDS */
 
 #about_me {
-    position: absolute;
-    top: 1225px;
 }
 
 #blob1 {
@@ -401,10 +410,17 @@ nav a:hover:after {
     opacity: 95%;
 }
 
+#firstName {
+    color: #e59f1f;
+    margin-left: -925px;
+    font-family: "Modak", system-ui;
+    font-size: 100px;
+}
+
 #home_about-me {
     position: absolute;
     height: 550px;
-    top: 1400px;
+    top: 1525px;
     mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiM2ODRCM0QiIGQ9Ik00Mi40LC01Mi40QzU0LjEsLTQwLjcsNjIuMSwtMjYuNSw2OC4zLC05LjNDNzQuNiw3LjgsNzkuMSwyOCw3MS42LDQxLjdDNjQuMiw1NS40LDQ0LjgsNjIuNSwyNi40LDY2LjdDOCw3MC45LC05LjQsNzIuMSwtMjYuNSw2OEMtNDMuNyw2My45LC02MC43LDU0LjQsLTcxLjksMzkuNEMtODMuMiwyNC40LC04OC42LDMuOSwtODMuNCwtMTIuOEMtNzguMiwtMjkuNSwtNjIuMywtNDIuNCwtNDYuNiwtNTMuNEMtMzAuOSwtNjQuNSwtMTUuNSwtNzMuNiwtMC4xLC03My41QzE1LjQsLTczLjUsMzAuNywtNjQuMiw0Mi40LC01Mi40WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
     mask-repeat: no-repeat;
     mask-position:center;
@@ -446,7 +462,7 @@ nav a:hover:after {
 }
 
 #index_contactMap input {
-    background-color: #fff5de;
+    background-color: #fffbf2;
     border-radius: 15px;
     font-size: 24px;
 }   
@@ -470,7 +486,7 @@ nav a:hover:after {
 }
 
 #index_contactSend {
-    background-color:#fff2da;
+    background-color:#fffbf2;
     margin-top: 15px;
     width: 200px;
     height: 50px;
@@ -485,9 +501,11 @@ nav a:hover:after {
 }
 
 #index_skillsMap {
-    text-align: center;
-    background-color: rgb(38, 37, 44);
-    height: auto;
+    display: grid;
+    grid: repeat(3, 125px) / auto-flow 45%;
+    column-count: 2;
+    background-color: rgb(43, 42, 48);
+    height: 500px;
     width: 75%;
     color: #fdf6e7;
     margin-left: 12%;
@@ -495,6 +513,14 @@ nav a:hover:after {
     padding-top: 50px;
     padding-bottom: 85px;
     border-radius: 20px;
+}
+
+#lastName {
+    color: rgb(43, 42, 47);
+    font-family: "Modak", system-ui;
+    font-size: 100px;
+    margin-left: -500px;
+    margin-top: -50px
 }
 
 #links_picture {
@@ -575,6 +601,8 @@ nav a:hover:after {
     border-radius: 40%;
     animation: fill 1.75s ease-in-out;
     z-index: -1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 #topBtn:hover {
@@ -613,7 +641,17 @@ transition: transform 0.3s ease;
 @-webkit-keyframes fadeIn{
     from {opacity:0;}
     to {opacity:1;}
-    }
+}
+
+@keyframes fadeOut{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+@-webkit-keyframes fadeOut{
+    from {opacity:1;}
+    to {opacity:0;}
+}
 
 @keyframes fill {
     from {
@@ -623,6 +661,15 @@ transition: transform 0.3s ease;
     to {
         top: -50px;
         transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }
 
@@ -647,56 +694,12 @@ transition: transform 0.3s ease;
     100%{background-position:0% 50%}
 }
 
-@keyframes skillsC {
-    0% {
-        width: 0%;
+@media (prefers-reduced-motion: no-preference) {
+    .in-view {
+        animation: fillBar 2.75s 1;
     }
-    100% {
-        width: 50%;
+  
+    .not-in-view {
+        opacity: 0;
     }
-}
-
-@keyframes skillsCpp {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 40%;
-    }
-}
-
-@keyframes skillsCss {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes skillsHtml {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes skillsJavascript {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 65%;
-    }
-}
-
-@keyframes skillsPython {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 70%;
-    }
-}
+  }
