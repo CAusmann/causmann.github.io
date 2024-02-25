@@ -72,33 +72,6 @@ nav a:hover:after {
 
 
 /* CLASSES */
-
-.blank_space {
-    margin: -150px;
-    height: 800px;
-}
-
-.blank_space a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.blank_space p {
-    line-height: 25px;
-    padding-top: 10px;
-    margin-left: 300px;
-    margin-right: 52%;
-}
-
-.blank_space svg {
-    position: absolute;
-    opacity: 0.8;
-    top: 1375px;
-    right: 50px;
-    height: 800px;
-    z-index: 1;
-}
-
 .div_left-half-text {
     margin-top: -350px;
     margin-left: 150px;
@@ -172,7 +145,41 @@ nav a:hover:after {
 
 .index a {
     color: white;
+}
 
+.index_aboutMe {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-color: #fff5de;
+}
+
+.index_aboutMe img {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: -50px;
+    padding-left: 50px;
+    border-radius: 100px;
+}
+
+.index_aboutMeBio {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+.index_aboutMeBio p {
+    padding: 25px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-top: 2px dashed rgb(38, 37, 44);
+    border-bottom: 2px dashed rgb(38, 37, 44);
+}
+
+.index_aboutMeBio a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .index_contactMe {
@@ -267,7 +274,7 @@ nav a:hover:after {
     font-size: 75px;
     letter-spacing: 7px;
     top: 30%;
-    left: 53%;
+    left: 55%;
     height: 100px;
     z-index: 0;
 }
@@ -422,22 +429,12 @@ nav a:hover:after {
 }
 
 #firstName {
+    margin-left: -125px;
+    margin-bottom: -55px;
     color: #e59f1f;
-    margin-left: -925px;
     font-family: "Modak", system-ui;
     font-size: 100px;
 }
-
-#home_about-me {
-    position: absolute;
-    height: 550px;
-    top: 1525px;
-    mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiM2ODRCM0QiIGQ9Ik00Mi40LC01Mi40QzU0LjEsLTQwLjcsNjIuMSwtMjYuNSw2OC4zLC05LjNDNzQuNiw3LjgsNzkuMSwyOCw3MS42LDQxLjdDNjQuMiw1NS40LDQ0LjgsNjIuNSwyNi40LDY2LjdDOCw3MC45LC05LjQsNzIuMSwtMjYuNSw2OEMtNDMuNyw2My45LC02MC43LDU0LjQsLTcxLjksMzkuNEMtODMuMiwyNC40LC04OC42LDMuOSwtODMuNCwtMTIuOEMtNzguMiwtMjkuNSwtNjIuMywtNDIuNCwtNDYuNiwtNTMuNEMtMzAuOSwtNjQuNSwtMTUuNSwtNzMuNiwtMC4xLC03My41QzE1LjQsLTczLjUsMzAuNywtNjQuMiw0Mi40LC01Mi40WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiIC8+Cjwvc3ZnPgo=);
-    mask-repeat: no-repeat;
-    mask-position:center;
-    mask-size: 100%;
-    z-index: 2;
-} 
 
 #index_contactChat {
     margin-right: -125px;
@@ -526,12 +523,21 @@ nav a:hover:after {
     border-radius: 20px;
 }
 
+#index_veryBottom {
+    text-align: center;
+    margin-top: 15px;
+    height: 35px;
+    background-color: rgb(43, 42, 48);
+    color: white;
+    font-size: 20px;
+}
+
 #lastName {
+    margin-right: -125px;
     color: rgb(43, 42, 47);
     font-family: "Modak", system-ui;
     font-size: 100px;
-    margin-left: -500px;
-    margin-top: -50px
+    margin-bottom: -25px;
 }
 
 #links_picture {
@@ -556,17 +562,20 @@ nav a:hover:after {
 }
 
 #sec1 {
-    overflow: hidden;
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-align: center;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-bottom: 75px;
     background-color: rgb(38, 37, 44);
+}
+
+#sec1 svg {
+    margin-bottom: -100px;
 }
 
 #sec2 {
     overflow: hidden;
     background-color: #ffd586;
-    margin-bottom: 0;
+    margin-top: -100px;
 }
 
 #sec2 svg {
@@ -715,6 +724,36 @@ transition: transform 0.3s ease;
     }
   }
 
+@media screen and (max-width: 1537px) {
+    .index_aboutMe img {
+        margin-bottom: -0px;
+    }
+
+    #firstName {
+        margin-left: -125px;
+        margin-bottom: -55px;
+        color: #e59f1f;
+        font-family: "Modak", system-ui;
+        font-size: 90px;
+    }
+
+    #lastName {
+        margin-right: -125px;
+        color: rgb(43, 42, 47);
+        font-family: "Modak", system-ui;
+        font-size: 90px;
+        margin-bottom: -25px;
+    }
+
+    .index_aboutMeBio p {
+        padding: 25px;
+        font-size: 23px;
+        letter-spacing: 2px;
+        border-top: 2px dashed rgb(38, 37, 44);
+        border-bottom: 2px dashed rgb(38, 37, 44);
+    }
+}
+
 @media screen and (max-width: 1465px){
     .index_welcomeContainer h1{
         font-size: 65px;
@@ -841,35 +880,67 @@ transition: transform 0.3s ease;
         position: relative;
         height: 500px;
     }
+
+    
+
+    .index_aboutMe img {
+        margin-bottom: 25px;
+    }
+
+    #firstName {
+        margin-left: -125px;
+        margin-bottom: -55px;
+        color: #e59f1f;
+        font-family: "Modak", system-ui;
+        font-size: 80px;
+    }
+
+    #lastName {
+        margin-right: -125px;
+        color: rgb(43, 42, 47);
+        font-family: "Modak", system-ui;
+        font-size: 80px;
+        margin-bottom: -25px;
+    }
+
+    .index_aboutMeBio p {
+        padding: 25px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        border-top: 2px dashed rgb(38, 37, 44);
+        border-bottom: 2px dashed rgb(38, 37, 44);
+    }
 }
 
-@media screen and (max-width: 1218px) {
-    #blob1 {
-        width: 410px;
-        bottom: 7%;
-        background-color: transparent;
-        opacity: 90%;
-        z-index: 0;
+@media screen and (max-width: 1041px) {
+    .index_aboutMe img {
+        margin-bottom: -25px;
+        width: 50%;
     }
 
-    #blob2 {
-        width: 475px;
-        bottom: 7%;
-        background-color: transparent;
-        opacity: 95%;
-        z-index: 0;
-    }      
-
-    #blob3 {
-        width: 150px;
-        bottom: 16%;
-        background-color: transparent;
-        opacity: 95%;
-        z-index: 0;
+    #firstName {
+        padding-top: 75px;
+        margin-left: -125px;
+        margin-bottom: -55px;
+        color: #e59f1f;
+        font-family: "Modak", system-ui;
+        font-size: 70px;
     }
 
-    .blank_space {
-        margin: -75px;
+    #lastName {
+        margin-right: -125px;
+        color: rgb(43, 42, 47);
+        font-family: "Modak", system-ui;
+        font-size: 70px;
+        margin-bottom: -25px;
+    }
+
+    .index_aboutMeBio p {
+        padding: 25px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        border-top: 2px dashed rgb(38, 37, 44);
+        border-bottom: 2px dashed rgb(38, 37, 44);
     }
 }
 
@@ -918,6 +989,8 @@ transition: transform 0.3s ease;
         margin-left: -20%;
     }
 }
+
+
 
 @media screen and (max-width: 695px) {
     .index_welcomeContainer h1{
@@ -1024,10 +1097,6 @@ transition: transform 0.3s ease;
 
     nav {
         padding: 55px;
-    }
-
-    .blank_space {
-        margin: -30px;
     }
 }
 
