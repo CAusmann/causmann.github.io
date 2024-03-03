@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
 a:visited{
     text-decoration: none;
     color: inherit;
@@ -182,11 +184,6 @@ nav a:hover:after {
     font-weight: bold;
 }
 
-.index_contactMe {
-    display: inline-flexbox;
-    align-items: center;
-}
-
 .index_headerContainer {
     overflow: hidden;
     position: relative;
@@ -201,68 +198,87 @@ nav a:hover:after {
     z-index: 0;
 }
 
-.index_skillBar {
-    height: 14px;
-    background: #3f3e3e;
-    border-radius: 9px;
-    margin-left: 100px;
-}
 
-.index_skillName {
-    font-size: 21px; 
-    font-weight: 700;
-    color: #f1f1f1;
-    padding-top: 30px;
-    margin: 10px 0;
-    margin-left: 100px;
-}
 
-.index_skillPercentage {
-    height: 14px;
-    color: black;
-    background: rgb(252,177,38);
-    background: linear-gradient(90deg, rgba(252,177,38,1) 0%, rgb(236, 203, 125) 35%, rgba(255,165,0,1) 100%);    border-radius: 3px;
-    position: relative;
-    animation: fillBar 2.5s ease-in-out forwards;
-}
 
-.index_skillPercentage::before { 
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background: #f1f1f1;
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: bold;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
-}
-
-.index_skillPercentage::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #f1f1f1;
-    top: -20px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
-}
-
-.index_skillsSection {
-    width: 100%;
-    max-width: 1750px;
-    padding: 0 20px;
-}
 
 .index_skillsSection h1 {
     color: rgb(38, 37, 44);
-    margin-left: 12%;
+    margin-left: 10%;
     font-size: 40px;
-    padding: 30px 10px;
-}   
+} 
+
+.skills-section {
+    display: flex;
+    width: 80%;
+    margin: 25px auto;
+    background-color: rgb(38, 37, 44);
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    line-height: 50px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .language {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ecf0f1;
+  }
+  
+  .progress-bar {
+    margin-top: 2px;
+    position: relative;
+    height: 22px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .speech-bubble {
+    position: absolute;
+    bottom: 115%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #fff; 
+    border-radius: 5px;
+    line-height: 15px;
+  }
+  
+  .percentage {
+    color: black; /* Text color inside the bubble */
+  }
+
+  .triangle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff; /* Match the progress bar color */
+  }
+
+
+
+
+
 
 .index_welcomeContainer h1 {
     position: absolute;
@@ -321,6 +337,7 @@ nav a:hover:after {
     height: 100px;
     width: 100px;
     height: 500px;
+    opacity: 0.8;
 }
 
 .links_galleryContainer {
@@ -398,6 +415,13 @@ nav a:hover:after {
 
 /* IDS */
 
+#about_me {
+    position: absolute;
+    overflow: hidden;
+    content: "";
+    margin-top: -5%;
+}
+
 #blob1 {
     position: absolute;
     width: 660px;
@@ -436,82 +460,10 @@ nav a:hover:after {
     font-size: 100px;
 }
 
-#index_contactChat {
-    margin-right: -125px;
-    text-align: center;
-}
-
-#index_contactEmail {
-    width: 365px;
-    padding: 3px;
-}
-
-#index_contactLets {
-    margin-left: -125px;
-    text-align: center;
-}
-
-#index_contactMap {
-    display: inline-block;
-    background-color: #febc42;
-    width: auto;
-    height: auto;
-    margin-top: 50px;
-    margin-left: 250px;
-    border-width: 10px;
-    border-color: #dd9f2e;
-    border-style:double;
-    border-radius: 30px;
-    padding: 50px;
-}
-
-#index_contactMap h1 {
-    font-size: 75px;
-}
-
-#index_contactMap input {
-    background-color: #fffbf2;
-    border-radius: 15px;
-    font-size: 24px;
-}   
-
-#index_contactMessage {
-    padding: 5px;
-    width: 475px;
-    height: 300px;
-    margin-top: 10px;
-}
-
-#index_contactName {
-    margin-top: 40px;
-    margin-bottom: 15px;
-    padding: 5px;
-}
-
-#index_contactPhoneNumber {
-    width: 300px;
-    padding: 3px;
-}
-
-#index_contactSend {
-    background-color:#fffbf2;
-    margin-top: 15px;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 30px;
-}
-
-#index_contactSubject {
-    margin-top: 50px;
-    width: 475px;
-    padding: 5px;
-}
-
 #index_skillsMap {
     display: grid;
-    grid: repeat(3, 125px) / auto-flow 45%;
-    column-count: 2;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     background-color: rgb(43, 42, 48);
     height: 500px;
     width: 75%;
@@ -645,6 +597,93 @@ transition: transform 0.3s ease;
 }
 
 
+
+
+
+
+
+.contact-container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: rgb(38, 37, 44);
+    font-size: 80px;
+    margin-bottom: 5px;
+    margin-top: -100px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: rgb(84, 84, 84);
+    border-radius: 10px;
+    margin-bottom: 20px;    
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: gray;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255,165,0,1);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
+}
+
+
+
+
+
 /* KEYFRAMES */
 
 @keyframes drip {
@@ -685,9 +724,6 @@ transition: transform 0.3s ease;
 }
 
 @keyframes fillBar {
-    from {
-        width: 0;
-    }
     to {
         width: 100%;
     }
@@ -722,7 +758,7 @@ transition: transform 0.3s ease;
     .not-in-view {
         opacity: 0;
     }
-  }
+}
 
 @media screen and (max-width: 1537px) {
     .index_aboutMe img {
@@ -840,7 +876,7 @@ transition: transform 0.3s ease;
     nav {
         font-size: 18px;
         font-weight: bold;
-    }    
+    }
 }
 
 @media screen and (max-width: 1218px) {
@@ -1032,6 +1068,7 @@ transition: transform 0.3s ease;
         padding-left: 0;
         left: 0;
     }
+
     .index_headerContainer img {
         position: relative;
         height: 450px;
@@ -1100,3 +1137,11 @@ transition: transform 0.3s ease;
     }
 }
 
+
+
+
+/* LINKS SIZES */
+
+@media screen and (max-width: px) {
+
+}

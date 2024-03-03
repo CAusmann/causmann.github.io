@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Cameron's Home Page</title>
 
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="scripts.js"></script>
 </head>
 <body class="fade_in">
@@ -16,8 +17,8 @@
             <a href="/">Home</a>
             <a href="pages/projects.html">Projects</a>
             <a href="pages/links.html">Links</a>
-            <a href="#firstName" >About Me</a>
-            <a href="#contact_me">Contact Me</a>
+            <a href="#about_me" >About Me</a>
+            <a href="#index_contactMe">Contact Me</a>
         </nav>
         <div class="index">
             <div class="index_headerContainer">
@@ -104,12 +105,13 @@
                 </animate>
             </path>
         </svg>
-        <div class="index_aboutMe"id="about_me">
+        <div id="about_me"></div>
+        <div class="index_aboutMe">
             <div style="background-color: #fff5de;">
                 <div class="index_aboutMeBio">
                     <h1 id="firstName">Cameron</h1>
                     <h1 id="lastName">Ausmann</h1>
-                    <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing up my degree, but feel free to check out my <a href="pages/projects.html">'Projects'</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#contact_me">'Contact Me'</a> section to get in touch with me!</Menu></p>
+                    <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing up my degree, but feel free to check out my <a href="pages/projects.html">'Projects'</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#index_contactMe">'Contact Me'</a> section to get in touch with me!</Menu></p>
                 </div>
                 <img id="home_about-me" src="pictures/About_me_merge.jpg">          
             </div>
@@ -131,51 +133,77 @@
         </svg>
         <div class="index_skillsSection">
             <h1>&lt;mySkills&gt;</h1>
-            <section id="index_skillsMap">
-                <div class="index_skill">
-                    <div class="index_skillName">HTML</div>
-                    <div class="index_skillBar">
-                        <div class="index_skillPercentage" per="85%" style="max-width: 85%;"></div>
+                <div class="skills-section">
+                    <div class="column">
+                        <div class="skill">
+                            <span class="language">HTML</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
+                                <div class="speech-bubble" style="left: 84%;">
+                                    <span class="percentage">85%</span>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <span class="language">CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
+                                <div class="speech-bubble" style="left: 69%;">
+                                    <span class="percentage">70%</span>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <span class="language">JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
+                                <div class="speech-bubble" style="left: 44%;">
+                                    <span class="percentage">45%</span>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="column">
+                        <div class="skill">
+                            <span class="language">Python</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
+                                <div class="speech-bubble" style="left: 69%;">
+                                    <span class="percentage">70%</span>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="language">C</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 55%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
+                                <div class="speech-bubble" style="left: 54%;">
+                                    <span class="percentage">55%</span>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span class="language">C++</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
+                                <div class="speech-bubble" style="left: 44%;">
+                                    <span class="percentage">45%</span>
+                                    <div class="triangle"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="index_skill">
-                    <div class="index_skillName">Python</div>
-                    <div class="index_skillBar">
-                        <div class="index_skillPercentage" per="70%" style="max-width: 70%;"></div>
-                    </div>
-                </div>
-
-
-                <div class="index_skill">
-                    <div class="index_skillName">JavaScript</div>
-                    <div class="index_skillBar">
-                        <div class="index_skillPercentage" per="65%" style="max-width: 65%;"></div>
-                    </div>
-                </div>
-
-                <div class="index_skill">
-                    <div class="index_skillName">CSS</div>
-                    <div class="index_skillBar">
-                        <div class="index_skillPercentage" per="78%" style="max-width: 78%;"></div>
-                    </div>
-                </div>
-
-                <div class="index_skill">
-                    <div class="index_skillName">C</div>
-                    <div class="index_skillBar">
-                        <div class="index_skillPercentage" per="74%" style="max-width: 74%;"></div>
-                    </div>
-                </div>
-
-                <div class="index_skill">
-                    <div class="index_skillName">C++</div>
-                    <div class="index_skillBar">
-                        <div class="index_skillPercentage" per="55%" style="max-width: 55%;"></div>
-                    </div>
-                </div>
-            </section>
             <h1>&lt;/mySkills&gt;</h1>
         </div>
     </section>
@@ -193,35 +221,30 @@
                 </animate>
             </path>
         </svg>
-        <div class="index_contactMe" id="contact_me">
-           <div id="index_contactMe"></div>
-           <section id="index_contactMap">
-                <h1 id="index_contactLets">Let's</h1>
-                <h1 id="index_contactChat">Chat</h1>
-                <form>
-                    <input type="text" id="index_contactName" placeholder="First Name" required>
-                    <input type="text" id="index_contactName" placeholder="Last Name" required>
-                    <br>
-                    <input type="text" id="index_contactPhoneNumber" placeholder="Phone Number  (Optional)">
-                    <input type="email" id="index_contactEmail" placeholder="Email" required>
-                    <br>
-                    <input type="text" id="index_contactSubject" placeholder="Subject" required>
-                    <br>
-                    <input type="text" id="index_contactMessage" placeholder="Message" required>
-                    <br>
-                    <button type="submit" id="index_contactSend">Send Message</button>
-                </form>
-           </section>
-           <section id="index_contactNav">
-
-           </section>
-           <section id="index_contactSkills">
-
-           </section>
+        <div class="contact-container">
+            <div id="index_contactMe"></div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <input type="hidden" name="access_key" value="0c6ee0d2-dd61-403e-a15b-ff6d54f2d911">
+                <input type="hidden" name="subject" value="New Submission from Website">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+                <div class="contact-left-title">
+                    <h2>Let's Chat!</h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <input type="text" name="subject" placeholder="Subject" class="contact-inputs" requried>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <div class="h-captcha" data-captcha="true"></div>
+                <button type="submit">Submit></button>
+            </form>
+            <div class="contact-right">
+                <img src="" alt=""> 
+            </div>
         </div>
     </section>
     <section id="index_veryBottom">
-        <p>© 2023 Cameron Ausmann  -  Thank you for visiting! :)</p>
+        <p>Copyright © 2023 Cameron Ausmann  -  Thank you for visiting! :)</p>
     </section>
 </body>
 </html>
