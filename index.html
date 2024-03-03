@@ -106,15 +106,16 @@
             </path>
         </svg>
         <div id="about_me"></div>
-        <div class="index_aboutMe">
-            <div style="background-color: #fff5de;">
-                <div class="index_aboutMeBio">
-                    <h1 id="firstName">Cameron</h1>
-                    <h1 id="lastName">Ausmann</h1>
-                    <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing up my degree, but feel free to check out my <a href="pages/projects.html">'Projects'</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#index_contactMe">'Contact Me'</a> section to get in touch with me!</p>
-                </div>
-                <img id="home_about-me" src="pictures/About_me_merge.jpg">          
-            </div>
+        <div style="background-color: #fff5de;" class="blank_space">
+            <h1 id="firstName">Cameron</h1>
+            <h1 id="lastName">Ausmann</h1>
+            <p>-------------------------------------------------------------</p>
+            <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing up my degree, but feel free to check out my <a href="pages/projects.html">'Projects'</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#contact_me">'Contact Me'</a> section to get in touch with me!</Menu></p>
+            <p>-------------------------------------------------------------</p>
+            <img id="home_about-me" src="pictures/Wand 2024-01-12 23_27_51 copy.JPG">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#684B3D" d="M42.4,-52.4C54.1,-40.7,62.1,-26.5,68.3,-9.3C74.6,7.8,79.1,28,71.6,41.7C64.2,55.4,44.8,62.5,26.4,66.7C8,70.9,-9.4,72.1,-26.5,68C-43.7,63.9,-60.7,54.4,-71.9,39.4C-83.2,24.4,-88.6,3.9,-83.4,-12.8C-78.2,-29.5,-62.3,-42.4,-46.6,-53.4C-30.9,-64.5,-15.5,-73.6,-0.1,-73.5C15.4,-73.5,30.7,-64.2,42.4,-52.4Z" transform="translate(100 100)" />
+            </svg>              
         </div>
     </section>
     <section id="sec2">
@@ -221,26 +222,31 @@
                 </animate>
             </path>
         </svg>
-        <div class="contact-container">
-            <div id="index_contactMe"></div>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                <input type="hidden" name="access_key" value="0c6ee0d2-dd61-403e-a15b-ff6d54f2d911">
-                <input type="checkbox" name="botcheck" id="" style="display: none;">
-                <div class="contact-left-title">
-                    <h2>Let's Chat!</h2>
-                    <hr>
-                </div>
-                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-                <hr>
-                <input type="text" name="subject" placeholder="Subject" class="contact-inputs" requried>
-                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                <div class="h-captcha" data-captcha="true"></div>
-                <button type="submit">Submit</button>
-            </form>
-            <div class="contact-right">
-                <img src="" alt=""> 
-            </div>
+        <div class="blank_space index_contactMe" id="contact_me">
+           <div id="index_contactMe"></div>
+           <section id="index_contactMap">
+                <h1 id="index_contactLets">Let's</h1>
+                <h1 id="index_contactChat">Chat</h1>
+                <form>
+                    <input type="text" id="index_contactName" placeholder="First Name" required>
+                    <input type="text" id="index_contactName" placeholder="Last Name" required>
+                    <br>
+                    <input type="text" id="index_contactPhoneNumber" placeholder="Phone Number  (Optional)">
+                    <input type="email" id="index_contactEmail" placeholder="Email" required>
+                    <br>
+                    <input type="text" id="index_contactSubject" placeholder="Subject" required>
+                    <br>
+                    <input type="text" id="index_contactMessage" placeholder="Message" required>
+                    <br>
+                    <button type="submit" id="index_contactSend">Send Message</button>
+                </form>
+           </section>
+           <section id="index_contactNav">
+
+           </section>
+           <section id="index_contactSkills">
+
+           </section>
         </div>
     </section>
     <section id="index_veryBottom">
