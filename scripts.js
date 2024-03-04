@@ -19,3 +19,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+document.getElementById('contact-left').addEventListener('submit', function (event) {
+  var response = hCaptcha.getResponse();
+  if (!response) {
+    event.preventDefault();
+    alert('Please complete the hCaptcha challenge.');
+  }
+});
