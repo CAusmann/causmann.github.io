@@ -219,7 +219,7 @@ nav a:hover:after {
 }
 
 .index_aboutMeBio a {
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
     color: inherit;
 }
