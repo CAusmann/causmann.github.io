@@ -353,6 +353,8 @@ nav a:hover:after {
 
 
 
+
+
 .mac-window {
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -362,6 +364,8 @@ nav a:hover:after {
     height: 65vh;
     margin: auto;
     margin-bottom: 25px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .title-bar {
@@ -370,6 +374,9 @@ nav a:hover:after {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .mac-button {
@@ -383,6 +390,55 @@ nav a:hover:after {
 .yellow { background-color: #FFD74D; }
 .green { background-color: #4ACF50; }
 
+
+.links_macContent {
+    color: black;
+    display: flex;
+    min-height: 0;
+    overflow-y: scroll;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.mac-window_left,
+.mac-window_right {
+    width: 50%;
+    box-sizing: border-box; 
+    padding: 5px; 
+}
+
+.links_macContent div {
+    color: black;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.links_macContent div:hover {
+    transition: transform .2s;
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.links_macContent img {
+    align-self: center;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.mac-window_left h3 {
+    line-height: 20px;
+    align-self: center;
+    margin-left: 10px; 
+}
+
+.mac-window_right h3 {
+    align-self: center;
+    margin-left: 10px;
+}
 
 
 
@@ -579,8 +635,10 @@ transition: transform 0.3s ease;
     -webkit-animation-fill-mode: forwards;
 }
 
-
-
+#underconstruction {
+    height: 200%;
+    margin-top: -22%;
+}
 
 
 
