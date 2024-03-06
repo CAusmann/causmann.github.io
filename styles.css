@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 
+
+
+/* ALL */
+
 a:visited{
     text-decoration: none;
     color: inherit;
@@ -16,9 +20,6 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/* ELEMENTS */
 
 body {
     height: 100%;
@@ -72,9 +73,6 @@ nav a:hover:after {
     z-index: 99;
   }
 
-
-/* CLASSES */
-
 .loader-wrapper {
     position: fixed;
     top: 0;
@@ -108,28 +106,86 @@ nav a:hover:after {
     100% { transform: rotate(360deg); }
 }
 
-
-.div_left-half-text {
-    margin-top: -350px;
-    margin-left: 150px;
-    margin-right: 50%;
+.fade_in {
+    animation: fadeIn 1.5s;
+    -webkit-animation:fadeIn 1s;
+    -o-animation:fadeIn 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
-.dot{
-    margin-top: 75px;
-    height: 75px;
-    width: 75px;
-    background-color: #fff;
+.fade_out {
+    animation: fadeOut 1.5s;
+}
+
+.title_container {
+    text-align: center;
+}
+
+.title_container h1 {
+    display: inline-block;
+    background-color: transparent;
+    font-family: monospace;
+    font-size: 75px;
+    letter-spacing: 7px;
+}
+
+.mac-window {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80vw;
+    height: 65vh;
+    margin: auto;
+    margin-bottom: 25px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.title-bar {
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.mac-button {
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    margin-right: 8px;
 }
 
-.dot:hover {
-    transition: transform .2s;
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05); 
+.red { background-color: #FF6059; }
+.yellow { background-color: #FFD74D; }
+.green { background-color: #4ACF50; }
+
+.mac-window_left,
+.mac-window_right {
+    width: 50%;
+    box-sizing: border-box; 
+    padding: 5px; 
 }
 
+.mac-window_left h3 {
+    line-height: 20px;
+    align-self: center;
+    margin-left: 10px; 
+}
+
+.mac-window_right h3 {
+    align-self: center;
+    margin-left: 10px;
+}
+
+
+
+/* INDEX */
 
 .drop {
     display: none;
@@ -167,18 +223,6 @@ nav a:hover:after {
     border-bottom: 30px solid #fcb126;
     top: -22px;
   }
-
-.fade_in {
-    animation: fadeIn 1.5s;
-    -webkit-animation:fadeIn 1s;
-    -o-animation:fadeIn 1s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-.fade_out {
-    animation: fadeOut 1.5s;
-}
 
 .index {
     background-color: rgb(38, 37, 44);
@@ -237,10 +281,6 @@ nav a:hover:after {
     background-color: transparent;
     z-index: 0;
 }
-
-
-
-
 
 .index_skillsSection h1 {
     color: rgb(38, 37, 44);
@@ -301,7 +341,7 @@ nav a:hover:after {
   }
   
   .percentage {
-    color: black; /* Text color inside the bubble */
+    color: black;
   }
 
   .triangle {
@@ -312,13 +352,8 @@ nav a:hover:after {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #fff; /* Match the progress bar color */
+    border-top: 10px solid #fff; 
   }
-
-
-
-
-
 
 .index_welcomeContainer h1 {
     position: absolute;
@@ -334,156 +369,6 @@ nav a:hover:after {
     height: 100px;
     z-index: 0;
 }
-
-.links_dots {
-    width: 100px;
-    height: 625px;
-    opacity: 0.8;
-}
-
-.links_page {
-    overflow-x: hidden;
-    color: white;
-    background: linear-gradient(270deg, #a77ccb, #ee98c4, #ff4faac7, #d7a6ff);
-    background-size: 400% 400%;
-
-    -webkit-animation: links_gradient 15s ease infinite;
-    -moz-animation: links_gradient 15s ease infinite;
-    -o-animation: links_gradient 15s ease infinite;
-    animation: links_gradient 15s ease infinite;
-}
-
-.links_page a {
-    color: white;
-}
-
-.links_map {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: -100px;
-}
-
-.links_map svg {
-    position: absolute;
-    height: 800px;
-    top: 180px;
-    right: 30%;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-.title_container {
-    text-align: center;
-}
-.title_container h1 {
-    display: inline-block;
-    background-color: transparent;
-    font-family: monospace;
-    font-size: 75px;
-    letter-spacing: 7px;
-}
-
-
-
-
-
-
-
-
-
-.mac-window {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 80vw;
-    height: 65vh;
-    margin: auto;
-    margin-bottom: 25px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.title-bar {
-    background-color: #F0F0F0;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.mac-button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-right: 8px;
-}
-
-.red { background-color: #FF6059; }
-.yellow { background-color: #FFD74D; }
-.green { background-color: #4ACF50; }
-
-
-.links_macContent {
-    color: black;
-    display: flex;
-    min-height: 0;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-}
-
-.mac-window_left,
-.mac-window_right {
-    width: 50%;
-    box-sizing: border-box; 
-    padding: 5px; 
-}
-
-.links_macContent div {
-    color: black;
-    display: flex;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
-.links_macContent div:hover {
-    transition: transform .2s;
-    -ms-transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
-.links_macContent img {
-    align-self: center;
-    margin: 5px;
-    width: 60px;
-    height: 60px;
-}
-
-.mac-window_left h3 {
-    line-height: 20px;
-    align-self: center;
-    margin-left: 10px; 
-}
-
-.mac-window_right h3 {
-    align-self: center;
-    margin-left: 10px;
-}
-
-
-
-
-
-
-
-
-
-/* IDS */
 
 #about_me {
     position: absolute;
@@ -670,14 +555,6 @@ transition: transform 0.3s ease;
     -webkit-animation-fill-mode: forwards;
 }
 
-#underconstruction {
-    height: 200%;
-    margin-top: -22%;
-}
-
-
-
-
 .contact-container {
     height: 90vh;
     display: flex;
@@ -747,6 +624,104 @@ transition: transform 0.3s ease;
     cursor: pointer;
 }
 
+
+
+/* LINKS */
+
+.dot{
+    margin-top: 75px;
+    height: 75px;
+    width: 75px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.dot:hover {
+    transition: transform .2s;
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+}
+
+.links_dots {
+    width: 100px;
+    height: 625px;
+    opacity: 0.8;
+}
+
+.links_page {
+    overflow-x: hidden;
+    color: white;
+    background: linear-gradient(270deg, #a77ccb, #ee98c4, #ff4faac7, #d7a6ff);
+    background-size: 400% 400%;
+
+    -webkit-animation: links_gradient 15s ease infinite;
+    -moz-animation: links_gradient 15s ease infinite;
+    -o-animation: links_gradient 15s ease infinite;
+    animation: links_gradient 15s ease infinite;
+}
+
+.links_page a {
+    color: white;
+}
+
+.links_map {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -100px;
+}
+
+.links_map svg {
+    position: absolute;
+    height: 800px;
+    top: 180px;
+    right: 30%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.links_macContent {
+    color: black;
+    display: flex;
+    min-height: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+.links_macContent div {
+    color: black;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.links_macContent div:hover {
+    transition: transform .2s;
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.links_macContent img {
+    align-self: center;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/* PROJECTS */
+
+#underconstruction {
+    height: 200%;
+    margin-top: -22%;
+}
+
+
+
+/* KEYFRAMES */
+
 @media (max-width: 800px) {
     .contact-inputs {
         width: 80vw;
@@ -755,12 +730,6 @@ transition: transform 0.3s ease;
         display: none;
     }
 }
-
-
-
-
-
-/* KEYFRAMES */
 
 @keyframes drip {
     to {
