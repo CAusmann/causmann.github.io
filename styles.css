@@ -6,7 +6,17 @@
 
 /* ALL */
 
-a:visited{
+a:link { 
+    text-decoration: none; 
+    color: inherit;
+} 
+
+a:visited { 
+    text-decoration: none; 
+    color: inherit;
+} 
+
+a:active { 
     text-decoration: none;
     color: inherit;
 }
@@ -713,11 +723,21 @@ transition: transform 0.3s ease;
 
 /* PROJECTS */
 
-#underconstruction {
-    height: 200%;
-    margin-top: -22%;
+.projectsContent h3 {
+    margin-right: 10px;
+    align-self: center;
+}
+.projectsMac-window_left {
+    width: 75%;
+    box-sizing: border-box; 
+    padding: 5px; 
 }
 
+.projectsMac-window_left h3 {
+    line-height: 20px;
+    align-self: center;
+    margin-left: 10px; 
+}
 
 
 /* KEYFRAMES */

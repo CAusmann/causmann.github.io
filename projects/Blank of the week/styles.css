@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../pictures/blankoftheweek.jpeg");
+    background-size: 100%;
+}
+
+.title {
+    display: inline-flex;
+    font-family: "Madimi One", sans-serif;    
+    background-color: #ffffff80;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    padding-bottom: 10px;
+}
+
+
+.mainContainer {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+
+.leftMasonry { 
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+
+.verticalMasonry { 
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 800px;
+    width: 50%;
+}
+
+.masonry-brick {
+    border-radius: 20px;
+    flex: auto;
+    margin: 0 8px 8px 0;
+    background-color: #ffffff;
+}
+
+.leftLayer1{
+    width: 100%;
+    height: 250px;
+}
+
+.leftLayer2 {
+    display: inline-flex;
+    width: 25%;
+    height: 125px;
+}
+
+.leftLayer3 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    padding: 40px;
+    font-family: "Handlee", cursive;
+    font-size: 30px;
+    width: 100%;
+    height: 125px;
+}
+
+.leftLayer4 {
+    width: 25%;
+    height: 300px;
+}
+
+.rightTopLayer1 {
+    padding-top: 1.75%;
+    display: inline-block;
+    height: 254px;
+    width: 49%;
+}
+
+.rightTopLayer2 {
+    height: 465px;
+    width: 48.5%;
+}
+
+.rightBottomLayer {
+    display: inline-block;
+    height: 300px;
+    width: 100%;
+}
+
+.songImage {
+    position: inherit;
+    width: 30%;
+    border-radius: 10px;
+    float: left;
+    margin-top: 3.5%;
+    margin-left: 3.5%;
+}
+
+.leftLayer1 h1 {
+    font-size: 30px;
+    margin-top: 3.5%;
+}
+
+.songBar {
+    width: 50%;
+    margin-left: -2%;
+}
+
+.label {
+    padding-top: 4.25%;
+    padding-left: 10%;
+    font-family: "Madimi One", sans-serif;    
+    font-size: 40px;
+}
+
+.upArrow {
+    width: 150px;
+    margin-top: -20%;
+}
+
+.quoteLabel {
+    padding-top: 3%;
+    font-family: "Madimi One", sans-serif;
+    font-size: 40px;
+}
+
+.quoteLabel img{
+    margin-top: 1px;
+    transform: rotate(165deg);
+}
+
+.leftLayer4 img {   
+    width: 85%;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+
+.rightTopLayer2 img{
+    width: 90%;
+    margin-top: 11%;
+    border-radius: 10px;
+}
+
+.movieTitle {
+    padding-bottom: 3%;
+    font-size: 50px;
+    font-family: "Madimi One", sans-serif;    
+    text-decoration: underline;
+}
+
+.movieCategory{
+    font-size: 25px;
+    display: inline;
+    font-family: "Madimi One", sans-serif;    
+}
+
+.movieDescription {
+    display: inline;
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+}
+
+.leaves {
+    margin-top: -5%;
+    width: 80%;
+}
+
+.rightBottomLayer img {
+    display: inline-block;
+    width: 45%;
+    margin-left: -52%;
+    border-radius: 10px;
+}
+
+.rightBottomLayer div {
+    position: relative;
+    margin-top: -24%;
+    margin-left: 45%;
+}
+
+.gameCategory{
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Madimi One", sans-serif;    
+}
+
+.gameDescription {
+    display: inline-block;
+    font-family: "Handlee", cursive;
+    font-size: 25px;
+}
+
+#veryBottom {
+    margin-top: 20%;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(43, 42, 48);
+    color: white;
+    font-size: 20px;
+}
