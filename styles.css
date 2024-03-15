@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ALL */
 
@@ -244,38 +243,53 @@ nav a:hover:after {
 
 .index_aboutMe {
     display: inline-block;
-    text-align: center;
     width: 100%;
-    height: 700px;
+    height: 1000px;
     background-color: #fff5de;
 }
 
 .index_aboutMe img {
     display: inline-block;
     width: 40%;
-    margin-bottom: -50px;
-    padding-left: 50px;
+    margin-top: -5%;
     border-radius: 100px;
+    margin-left: 15%;
 }
 
 .index_aboutMeBio {
     display: inline-block;
     width: 40%;
-    text-align: center;
 }
 
 .index_aboutMeBio p {
-    padding: 25px;
+    font-family: "Exo", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 50px;
     font-size: 25px;
     letter-spacing: 2px;
-    border-top: 2px dashed rgb(38, 37, 44);
-    border-bottom: 2px dashed rgb(38, 37, 44);
+    color: #faf9f9;
 }
 
 .index_aboutMeBio a {
     text-decoration: underline;
     font-weight: bold;
     color: inherit;
+}
+
+.index_aboutMeRectangle {
+    display: block;
+    position: relative;
+    left: 0;
+    height: auto;
+    width: 135%;
+    z-index: 1;
+    background-color: #434343;
+    border-radius: 0px 250px 250px 0px;
+}
+.index_name {
+    text-align: center;
+    margin-left: -50%;
 }
 
 .index_headerContainer {
@@ -419,17 +433,17 @@ nav a:hover:after {
 
 #firstName {
     margin-left: -125px;
-    margin-bottom: -55px;
+    margin-top: 2.5%;
     color: #e59f1f;
     font-family: "Modak", system-ui;
-    font-size: 100px;
+    font-size: 120px;
 }
 
 #index_skillsMap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    background-color: rgb(43, 42, 48);
+    background-color: rgb(67, 59, 106);
     height: 500px;
     width: 75%;
     color: #fdf6e7;
@@ -456,11 +470,12 @@ nav a:hover:after {
 }
 
 #lastName {
+    margin-top: -3%;
     margin-right: -125px;
+    margin-bottom: -4%;
     color: rgb(43, 42, 47);
     font-family: "Modak", system-ui;
-    font-size: 100px;
-    margin-bottom: -25px;
+    font-size: 120px;
 }
 
 #links_picture {
@@ -496,7 +511,7 @@ nav a:hover:after {
 #sec2 {
     overflow: hidden;
     background-color: #ffd586;
-    margin-top: -100px;
+    margin-top: -75px;
 }
 
 #sec2 svg {
@@ -825,33 +840,15 @@ transition: transform 0.3s ease;
     }
 }
 
-@media screen and (max-width: 1537px) {
-    .index_aboutMe img {
-        margin-bottom: -0px;
-    }
-
-    #firstName {
-        margin-left: -125px;
-        margin-bottom: -55px;
-        color: #e59f1f;
-        font-family: "Modak", system-ui;
-        font-size: 90px;
-    }
-
+@media screen and (max-width: 1660px) {
     #lastName {
-        margin-right: -125px;
-        color: rgb(43, 42, 47);
-        font-family: "Modak", system-ui;
-        font-size: 90px;
-        margin-bottom: -25px;
+        margin-bottom: 0.15%;
     }
+}
 
-    .index_aboutMeBio p {
-        padding: 25px;
-        font-size: 23px;
-        letter-spacing: 2px;
-        border-top: 2px dashed rgb(38, 37, 44);
-        border-bottom: 2px dashed rgb(38, 37, 44);
+@media screen and (max-width: 1510px) {
+    .index_aboutMe img {
+        margin-bottom: 8%;
     }
 }
 
@@ -942,6 +939,14 @@ transition: transform 0.3s ease;
         font-size: 18px;
         font-weight: bold;
     }
+
+    .index_name {
+        margin-left: 0.15%;
+    }
+
+    .index_aboutMe {
+        height: 1225px;
+    }
 }
 
 @media screen and (max-width: 1218px) {
@@ -977,71 +982,22 @@ transition: transform 0.3s ease;
         opacity: 95%;
         z-index: 0;
     }
+    
     .index_headerContainer img {
         position: relative;
         height: 500px;
     }
 
-    
-
-    .index_aboutMe img {
-        margin-bottom: 25px;
+    #home_about-me {
+        display: none;
     }
 
-    #firstName {
-        margin-left: -125px;
-        margin-bottom: -55px;
-        color: #e59f1f;
-        font-family: "Modak", system-ui;
-        font-size: 80px;
+    .index_aboutMeRectangle {
+        width: 225%;
     }
 
-    #lastName {
-        margin-right: -125px;
-        color: rgb(43, 42, 47);
-        font-family: "Modak", system-ui;
-        font-size: 80px;
-        margin-bottom: -25px;
-    }
-
-    .index_aboutMeBio p {
-        padding: 25px;
-        font-size: 18px;
-        letter-spacing: 2px;
-        border-top: 2px dashed rgb(38, 37, 44);
-        border-bottom: 2px dashed rgb(38, 37, 44);
-    }
-}
-
-@media screen and (max-width: 1041px) {
-    .index_aboutMe img {
-        margin-bottom: -25px;
-        width: 50%;
-    }
-
-    #firstName {
-        padding-top: 75px;
-        margin-left: -125px;
-        margin-bottom: -55px;
-        color: #e59f1f;
-        font-family: "Modak", system-ui;
-        font-size: 70px;
-    }
-
-    #lastName {
-        margin-right: -125px;
-        color: rgb(43, 42, 47);
-        font-family: "Modak", system-ui;
-        font-size: 70px;
-        margin-bottom: -25px;
-    }
-
-    .index_aboutMeBio p {
-        padding: 25px;
-        font-size: 16px;
-        letter-spacing: 2px;
-        border-top: 2px dashed rgb(38, 37, 44);
-        border-bottom: 2px dashed rgb(38, 37, 44);
+    .index_aboutMe {
+        height: 1000px;
     }
 }
 
@@ -1088,6 +1044,10 @@ transition: transform 0.3s ease;
         position: relative;
         height: 500px;
         margin-left: -20%;
+    }
+
+    .index_aboutMe {
+        height: 1100px
     }
 }
 
