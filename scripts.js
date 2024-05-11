@@ -1,8 +1,11 @@
+// Script 1: Loader functionality
 document.addEventListener("DOMContentLoaded", function () {
   var loaderWrapper = document.querySelector(".loader-wrapper");
 
   window.addEventListener("load", function () {
     fadeOutLoader(loaderWrapper);
+    // Moved the call to createInfiniteLoop() inside the load event
+    createInfiniteLoop();
   });
 
   setTimeout(function () {
@@ -18,29 +21,32 @@ function fadeOutLoader(loaderWrapper) {
   }, 500);
 }
 
-
-
-
-window.onscroll = function() {scrollFunction()};
+// Script 2: Scroll functionality
+window.onscroll = function() {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("topBtn").style.display = "block";
-  }else {
-    document.getElementById("topBtn").style.display = "none";
-  }
-
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("drop").style.display = "block";
   } else {
+    document.getElementById("topBtn").style.display = "none";
     document.getElementById("drop").style.display = "none";
   }
 }
-
 
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+
+
+
 
 
