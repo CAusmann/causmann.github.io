@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Cameron's Home Page</title>
 
+    <script src="/scripts.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
-    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body class="fade_in">
     <section id="index_veryTop">
@@ -120,7 +123,7 @@
                 </div>
                 <div class="index_aboutMeBio">
                     <div class="index_aboutMeRectangle">
-                        <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing up my degree, but feel free to check out my <a href="pages/projects.html">Projects</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#index_contactMe">Contact Me</a> section to get in touch with me!</p>
+                        <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing my degree, but feel free to check out my <a href="pages/projects.html">Projects</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#index_contactMe">Contact Me</a> section to get in touch with me!</p>
                     </div>
                 </div>
                 <img id="home_about-me" src="pictures/About_me_merge.jpg">          
@@ -141,82 +144,78 @@
                 </animate>
             </path>
         </svg>
-        <div class="index_skillsSection">
-            <h1>&lt;mySkills&gt;</h1>
-                <div class="skills-section">
-                    <div class="column">
-                        <div class="skill">
-                            <span class="language">HTML</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
-                                <div class="speech-bubble" style="left: 84%;">
-                                    <span class="percentage">85%</span>
-                                    <div class="triangle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill">
-                            <span class="language">CSS</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 80%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
-                                <div class="speech-bubble" style="left: 79%;">
-                                    <span class="percentage">80%</span>
-                                    <div class="triangle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill">
-                            <span class="language">JavaScript</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 60%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
-                                <div class="speech-bubble" style="left: 59%;">
-                                    <span class="percentage">60%</span>
-                                    <div class="triangle"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="column">
-                        <div class="skill">
-                            <span class="language">Python</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 75%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
-                                <div class="speech-bubble" style="left: 74%;">
-                                    <span class="percentage">75%</span>
-                                    <div class="triangle"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <span class="language">C</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 65%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
-                                <div class="speech-bubble" style="left: 64%;">
-                                    <span class="percentage">65%</span>
-                                    <div class="triangle"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <span class="language">C++</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 50%;  background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgb(236, 203, 125) 100%);"></div>
-                                <div class="speech-bubble" style="left: 49%;">
-                                    <span class="percentage">50%</span>
-                                    <div class="triangle"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <h1>&lt;/mySkills&gt;</h1>
-        </div>
     </section>
+
+
+
+
+
+
+
+    <section id="index_skills">
+        <div class="index_skillsTitle">
+            <h1 id="index_skillsTitle_My">My</h1>
+            <h1 id="index_skillsTitle_Skills">Skills</h1>
+        </div>       
+        <div class="skills-carousel">
+            <div><img src="/pictures/skills/apple.png" alt="Apple"><p>Apple Products/OS</p></div>
+            <div><img src="/pictures/skills/arch.png" alt="Arch Linux"><p>Arch Linux</p></div>
+            <div><img src="/pictures/skills/bash.png" alt="Bash"><p>Bash</p></div>
+            <div><img src="/pictures/skills/burpsuite.png" alt="Burpsuite"><p>Burpsuite</p></div>
+            <div><img src="/pictures/skills/c.png" alt="C"><p>C</p></div>
+            <div><img src="/pictures/skills/centos.png" alt="CentOS Linux"><p>CentOS Linux</p></div>
+            <div><img src="/pictures/skills/cpp.png" alt="C++"><p>C++</p></div>
+            <div><img src="/pictures/skills/css.png" alt="CSS"><p>CSS</p></div>
+            <div><img src="/pictures/skills/debian.png" alt="Debian Linux"><p>Debian Linux</p></div>
+            <div><img src="/pictures/skills/html.png" alt="HTML"><p>HTML</p></div>
+            <div><img src="/pictures/skills/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+            <div><img src="/pictures/skills/kali.png" alt="Kali Linux"><p>Kali Linux</p></div>
+            <div><img src="/pictures/skills/linux.png" alt="Linux"><p>Linux</p></div>
+            <div><img src="/pictures/skills/metasploit.png" alt="Metasploit"><p>Metasploit</p></div>
+            <div><img src="/pictures/skills/paloalto.svg" alt="PaloAlto"><p>PaloAlto</p></div>
+            <div><img src="/pictures/skills/pfsense.png" alt="pfsense"><p>pfsense</p></div>
+            <div><img src="/pictures/skills/powershell.png" alt="Powershell"><p>Powershell</p></div>
+            <div><img src="/pictures/skills/python.png" alt="Python"><p>Python</p></div>
+            <div><img src="/pictures/skills/ubuntu.png" alt="Ubuntu Linux"><p>Ubuntu Linux</p></div>
+            <div><img src="/pictures/skills/utm.png" alt="UTM"><p>UTM</p></div>
+            <div><img src="/pictures/skills/virtualbox.png" alt="VirtualBox"><p>VirtualBox</p></div>
+            <div><img src="/pictures/skills/vmware.png" alt="VMWare"><p>VMWare</p></div>
+            <div><img src="/pictures/skills/windows.png" alt="Windows"><p>Windows</p></div>
+            <div><img src="/pictures/skills/wireshark.png" alt="Wireshark"><p>Wireshark</p></div>
+        </div>
+          
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <script>
+            $(document).ready(function(){
+              $('.skills-carousel').slick({
+                slidesToShow: 6,
+                slidesToScroll: 0.75,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: true,
+                responsive: [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 3
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1
+                    }
+                  }
+                ]
+              });
+            });
+          </script>
+    </section>
+
     <section id="sec3">
         <svg viewBox="0 0 1440 490">
             <path fill="#ffd586">
