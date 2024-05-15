@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("load", function () {
     fadeOutLoader(loaderWrapper);
-    // Moved the call to createInfiniteLoop() inside the load event
     createInfiniteLoop();
   });
 
@@ -41,12 +40,20 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// Function to duplicate carousel content
+function duplicateContent(carousel) {
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('skills-carousel-wrapper');
+  wrapper.innerHTML = carousel.innerHTML + carousel.innerHTML;
+  carousel.innerHTML = '';
+  carousel.appendChild(wrapper);
+}
 
+// Function to create an infinite loop for the carousels
+function createInfiniteLoop() {
+  const logosCarousel = document.querySelector('.skills-carousel.logos');
+  const textsCarousel = document.querySelector('.skills-carousel.texts');
 
-
-
-
-
-
-
-
+  duplicateContent(logosCarousel);
+  duplicateContent(textsCarousel);
+}

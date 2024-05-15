@@ -152,97 +152,66 @@
 
 
 
-    <section id="index_skills">
+    <div class="carousel-container">
         <div class="index_skillsTitle">
             <h1 id="index_skillsTitle_My">My</h1>
             <h1 id="index_skillsTitle_Skills">Skills</h1>
-        </div>       
-        <div class="skills-carousel">
-            <div><img src="/pictures/skills/apple.png" alt="Apple"></div>
-            <div><img src="/pictures/skills/arch.png" alt="Arch Linux"></div>
-            <div><img src="/pictures/skills/bash.png" alt="Bash"></div>
-            <div><img src="/pictures/skills/burpsuite.png" alt="Burpsuite"></div>
-            <div><img src="/pictures/skills/c.png" alt="C"></div>
-            <div><img src="/pictures/skills/centos.png" alt="CentOS Linux"></div>
-            <div><img src="/pictures/skills/cpp.png" alt="C++"></div>
-            <div><img src="/pictures/skills/css.png" alt="CSS"></div>
-            <div><img src="/pictures/skills/debian.png" alt="Debian Linux"></div>
-            <div><img src="/pictures/skills/figma.png" alt="Figma"></div>
-            <div><img src="/pictures/skills/html.png" alt="HTML"></div>
-            <div><img src="/pictures/skills/javascript.png" alt="JavaScript"></div>
-            <div><img src="/pictures/skills/kali.png" alt="Kali Linux"></div>
-            <div><img src="/pictures/skills/linux.png" alt="Linux"></div>
-            <div><img src="/pictures/skills/metasploit.png" alt="Metasploit"></div>
-            <div><img src="/pictures/skills/paloalto.svg" alt="PaloAlto"></div>
-            <div><img src="/pictures/skills/pfsense.png" alt="pfsense"></div>
-            <div><img src="/pictures/skills/powershell.png" alt="Powershell"></div>
-            <div><img src="/pictures/skills/python.png" alt="Python"></div>
-            <div><img src="/pictures/skills/ubuntu.png" alt="Ubuntu Linux"></div>
-            <div><img src="/pictures/skills/utm.png" alt="UTM"></div>
-            <div><img src="/pictures/skills/virtualbox.png" alt="VirtualBox"></div>
-            <div><img src="/pictures/skills/vmware.png" alt="VMWare"></div>
-            <div><img src="/pictures/skills/windows.png" alt="Windows"></div>
-            <div><img src="/pictures/skills/wireshark.png" alt="Wireshark"></div>
         </div>
-        <div class="skills-carousel">
-            <div><p>Apple Products/OS</p></div>
-            <div><p>Arch Linux</p></div>
-            <div><p>Bash</p></div>
-            <div><p>Burpsuite</p></div>
-            <div><p>C</p></div>
-            <div><p>CentOS Linux</p></div>
-            <div><p>C++</p></div>
-            <div><p>CSS</p></div>
-            <div><p>Debian Linux</p></div>
-            <div><p>Figma</p></div>
-            <div><p>HTML</p></div>
-            <div><p>JavaScript</p></div>
-            <div><p>Kali Linux</p></div>
-            <div><p>Linux</p></div>
-            <div><p>Metasploit</p></div>
-            <div><p>PaloAlto</p></div>
-            <div><p>pfsense</p></div>
-            <div><p>Powershell</p></div>
-            <div><p>Python</p></div>
-            <div><p>Ubuntu Linux</p></div>
-            <div><p>UTM</p></div>
-            <div><p>VirtualBox</p></div>
-            <div><p>VMWare</p></div>
-            <div><p>Windows</p></div>
-            <div><p>Wireshark</p></div>
+        <div class="skills-carousel logos">
+            <div class="logo-container"><img src="/pictures/skills/apple.png" alt="Apple"></div>
+            <div class="logo-container"><img src="/pictures/skills/arch.png" alt="Arch Linux"></div>
+            <div class="logo-container"><img src="/pictures/skills/bash.png" alt="Bash"></div>
+            <div class="logo-container"><img src="/pictures/skills/burpsuite.png" alt="Burpsuite"></div>
+            <div class="logo-container"><img src="/pictures/skills/c.png" alt="C"></div>
+            <div class="logo-container"><img src="/pictures/skills/cpp.png" alt="C++"></div>
+            <div class="logo-container"><img src="/pictures/skills/centos.png" alt="CentOS Linux"></div>
+            <div class="logo-container"><img src="/pictures/skills/css.png" alt="CSS"></div>
+            <div class="logo-container"><img src="/pictures/skills/debian.png" alt="Debian Linux"></div>
+            <div class="logo-container"><img src="/pictures/skills/figma.png" alt="Figma"></div>
+            <div class="logo-container"><img src="/pictures/skills/html.png" alt="HTML"></div>
+            <div class="logo-container"><img src="/pictures/skills/javascript.png" alt="JavaScript"></div>
+            <div class="logo-container"><img src="/pictures/skills/kali.png" alt="Kali Linux"></div>
+            <div class="logo-container"><img src="/pictures/skills/linux.png" alt="Linux"></div>
+            <div class="logo-container"><img src="/pictures/skills/metasploit.png" alt="Metasploit"></div>
+            <div class="logo-container"><img src="/pictures/skills/paloalto.svg" alt="PaloAlto"></div>
+            <div class="logo-container"><img src="/pictures/skills/pfsense.png" alt="pfsense"></div>
+            <div class="logo-container"><img src="/pictures/skills/powershell.png" alt="Powershell"></div>
+            <div class="logo-container"><img src="/pictures/skills/python.png" alt="Python"></div>
+            <div class="logo-container"><img src="/pictures/skills/ubuntu.png" alt="Ubuntu Linux"></div>
+            <div class="logo-container"><img src="/pictures/skills/utm.png" alt="UTM"></div>
+            <div class="logo-container"><img src="/pictures/skills/virtualbox.png" alt="VirtualBox"></div>
+            <div class="logo-container"><img src="/pictures/skills/vmware.png" alt="VMWare"></div>
+            <div class="logo-container"><img src="/pictures/skills/windows.png" alt="Windows"></div>
+            <div class="logo-container"><img src="/pictures/skills/wireshark.png" alt="Wireshark"></div>
         </div>
-          
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-          <script>
-            $(document).ready(function(){
-              $('.skills-carousel').slick({
-                slidesToShow: 6,
-                slidesToScroll: 0.75,
-                autoplay: true,
-                autoplaySpeed: 0,
-                speed: 1500,
-                arrows: false,
-                dots: false,
-                pauseOnHover: false,
-                responsive: [
-                  {
-                    breakpoint: 768,
-                    settings: {
-                      slidesToShow: 3
-                    }
-                  },
-                  {
-                    breakpoint: 480,
-                    settings: {
-                      slidesToShow: 1
-                    }
-                  }
-                ]
-              });
-            });
-          </script>
-    </section>
+        <div class="skills-carousel texts">
+            <div class="text-container"><p>Apple Products/OS</p></div>
+            <div class="text-container"><p>Arch Linux</p></div>
+            <div class="text-container"><p>Bash</p></div>
+            <div class="text-container"><p>Burpsuite</p></div>
+            <div class="text-container"><p>C</p></div>
+            <div class="text-container"><p>C++</p></div>
+            <div class="text-container"><p>CentOS Linux</p></div>
+            <div class="text-container"><p>CSS</p></div>
+            <div class="text-container"><p>Debian Linux</p></div>
+            <div class="text-container"><p>Figma</p></div>
+            <div class="text-container"><p>HTML</p></div>
+            <div class="text-container"><p>JavaScript</p></div>
+            <div class="text-container"><p>Kali Linux</p></div>
+            <div class="text-container"><p>Linux</p></div>
+            <div class="text-container"><p>Metasploit</p></div>
+            <div class="text-container"><p>PaloAlto</p></div>
+            <div class="text-container"><p>pfsense</p></div>
+            <div class="text-container"><p>Powershell</p></div>
+            <div class="text-container"><p>Python</p></div>
+            <div class="text-container"><p>Ubuntu Linux</p></div>
+            <div class="text-container"><p>UTM</p></div>
+            <div class="text-container"><p>VirtualBox</p></div>
+            <div class="text-container"><p>VMWare</p></div>
+            <div class="text-container"><p>Windows</p></div>
+            <div class="text-container"><p>Wireshark</p></div>
+        </div>
+    </div>
 
     <section id="sec3">
         <svg viewBox="0 0 1440 490">
