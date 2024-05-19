@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/katahdin-round');
 
 /* ALL */
 
@@ -427,10 +428,10 @@ nav a:hover:after {
 }
 
 #firstName {
-    margin-left: -125px;
+    margin-left: -100px;
     margin-top: 2.5%;
     color: #e59f1f;
-    font-family: "Modak", system-ui;
+    font-family: 'Katahdin Round', sans-serif;
     font-size: 120px;
 }
 
@@ -458,11 +459,11 @@ nav a:hover:after {
 }
 
 #lastName {
-    margin-top: -3%;
-    margin-right: -125px;
-    margin-bottom: -4%;
+    margin-top: -1.5%;
+    margin-right: -150px;
+    margin-bottom: -2%;
     color: rgb(43, 42, 47);
-    font-family: "Modak", system-ui;
+    font-family: 'Katahdin Round', sans-serif;
     font-size: 120px;
 }
 
@@ -507,7 +508,7 @@ nav a:hover:after {
 }
 
 #sec3 {
-    margin-top: -5%;
+    margin-top: -4%;
     overflow: hidden;
     background-color: #ffc457;
 }
@@ -663,7 +664,7 @@ transition: transform 0.3s ease;
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    height: 950px;
+    height: 825px;
 }
 
 .skills-carousel {
@@ -723,25 +724,19 @@ transition: transform 0.3s ease;
     }
 }
 
-#index_skillsTitle {
-    text-align: center;
-    align-items: center;
-    align-self: center;
-}
-
 #index_skillsTitle_My {
-    margin-left: 40%;
+    margin-left: 36%;
     color: #e59f1f;
-    font-family: "Modak", system-ui;
+    font-family: 'Katahdin Round', sans-serif;
     font-size: 145px;
 }
 
 #index_skillsTitle_Skills {
-    margin-left: 42%;
-    margin-top: -5%;
+    margin-left: 36%;
+    margin-top: -3%;
     margin-bottom: 1%;
     color: rgb(43, 42, 47);
-    font-family: "Modak", system-ui;
+    font-family: 'Katahdin Round', sans-serif;
     font-size: 145px;
 }
 
