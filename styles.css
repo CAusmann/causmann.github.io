@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.cdnfonts.com/css/katahdin-round');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 /* ALL */
 
@@ -431,7 +432,6 @@ nav a:hover:after {
     margin-left: -100px;
     margin-top: 2.5%;
     color: #e59f1f;
-    font-family: 'Katahdin Round', sans-serif;
     font-size: 120px;
 }
 
@@ -459,11 +459,10 @@ nav a:hover:after {
 }
 
 #lastName {
-    margin-top: -1.5%;
+    margin-top: -1.75%;
     margin-right: -150px;
     margin-bottom: -2%;
     color: rgb(43, 42, 47);
-    font-family: 'Katahdin Round', sans-serif;
     font-size: 120px;
 }
 
@@ -657,6 +656,12 @@ transition: transform 0.3s ease;
 
 
 
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 .carousel-container {
     background-color: #ffd586;
@@ -675,7 +680,7 @@ transition: transform 0.3s ease;
 }
 
 .skills-carousel.logos {
-    margin-bottom: 10px;
+    margin-bottom: -50px;
 }
 
 .skills-carousel-wrapper {
@@ -709,7 +714,7 @@ transition: transform 0.3s ease;
     text-align: center;
     vertical-align: middle;
     width: 150px;
-    background-color: #f0b341b9;
+    background-color: #f0b34172;
     border-radius: 10px;
     margin-top: -30%;
     padding: 8px 0;
@@ -725,18 +730,16 @@ transition: transform 0.3s ease;
 }
 
 #index_skillsTitle_My {
-    margin-left: 36%;
+    margin-left: 35%;
     color: #e59f1f;
-    font-family: 'Katahdin Round', sans-serif;
     font-size: 145px;
 }
 
 #index_skillsTitle_Skills {
-    margin-left: 36%;
-    margin-top: -3%;
+    margin-left: 40%;
+    margin-top: -2%;
     margin-bottom: 1%;
     color: rgb(43, 42, 47);
-    font-family: 'Katahdin Round', sans-serif;
     font-size: 145px;
 }
 
