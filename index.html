@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <title>Cameron's Home Page</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="/scripts.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Cam's Corner</title>
+
 </head>
 <body class="fade_in">
-    <section id="index_veryTop">
-        <p>Hello! Please note that this website is currently under development and doesn't display properly on mobile</p>
-    </section>
     <div class="loader-wrapper">
         <div class="loader"></div>
     </div>
@@ -26,7 +28,7 @@
             <a href="/">Home</a>
             <a href="pages/projects.html">Projects</a>
             <a href="pages/links.html">Links</a>
-            <a href="#about_me" >About Me</a>
+            <a href="#index_aboutMe" >About Me</a>
             <a href="#index_contactMe">Contact Me</a>
         </nav>
         <div class="index">
@@ -114,19 +116,24 @@
                 </animate>
             </path>
         </svg>
-        <div id="about_me"></div>
-        <div class="index_aboutMe">
-            <div style="background-color: #fff5de;">
-                <div class="index_name poetsen-one-regular">
-                    <h1 id="firstName">Cameron</h1>
-                    <h1 id="lastName">Ausmann</h1>
-                </div>
-                <div class="index_aboutMeBio">
-                    <div class="index_aboutMeRectangle">
-                        <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing my degree, but feel free to check out my <a href="pages/projects.html">Projects</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#index_contactMe">Contact Me</a> section to get in touch with me!</p>
+        <div id="index_aboutMe">
+            <div class="index_aboutMe">
+                <div class="index_aboutMeGrid">
+                    <div class="gridDisplay grid_item1">
+                        <p>My Name is</p>
+                        <h2>Cameron.</h2> 
+                        <p>It's Nice to Meet You!</p>
+                    </div>
+                    <img src="pictures/cam.jpg" class="grid_item2" style="width: 100%; height:auto;">
+                    <div class="gridDisplay grid_item3">
+                        <p>My passion for web development and ethical hacking drives me to explore all things technology and design. I'm currently pursuing a Bachelor of Science degree in Cyber Operations at Dakota State University, so please visit my Projects page to see what I’ve been working on. I hope you enjoy exploring my work as much as I enjoyed creating it!</p>
+                    </div>
+                    <img src="pictures/airplane.JPG" class="grid_item4" style="width: 100%; height:auto;">
+                    <div class="gridDisplay grid_item5">
+                        <h2>My Goal</h2>
+                        <p>I aim to use my skills to bring your ideas to life. There’s nothing more rewarding than seeing the excitement on someone’s face when our collaborative imaginations transform their vision into a reality.</p>
                     </div>
                 </div>
-                <img id="home_about-me" src="pictures/About_me_merge.jpg">          
             </div>
         </div>
     </section>
@@ -144,75 +151,62 @@
                 </animate>
             </path>
         </svg>
+        <div class="index_projectsTitle">
+            <div class="contact-left-title">
+                <h2>My Projects</h2>
+                <hr>
+                <br><br><br>
+            </div>
+        </div>
+        <div class="index_projects">
+            <div class="index_projectsRow">
+                <div class="index_projectsColumn">
+                    <div class="index_projectPicture">
+                        <img src="pictures/DiscordBot.png" alt="Screenshot of React.dc Discored Bio" class="blurImage">
+                        <a class="hoverButton" href="https://github.com/CAusmann/React.dc" target="_blank">Visit the GitHub!</a>
+                    </div>
+                </div>
+                <div class="index_projectsColumn">
+                    <div class="index_projectDescription">
+                        <div class="index_mac-window">
+                            <div class="index_title-bar">
+                                <div class="mac-button red"></div>
+                                <div class="mac-button yellow"></div>
+                                <div class="mac-button green"></div>
+                            </div>
+                            <div class="index_macContent">
+                                <pre class="terminal" data-text="Project Name:\nReact.dc\nDescription:\nAs an avid user of the 'regional_indicator' reactions in Discord, I wanted a way to quickly spell words on messages using them.\nI created this simple Discord Bot using Python to do just that!"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index_projectsRow">
+                <div class="index_projectsColumn">
+                    <div class="index_projectPicture">
+                        <img src="pictures/IRWA.png" alt="Screenshot of React.dc Discored Bio" class="blurImage">
+                        <a class="hoverButton">Stay Tuned ;)</a>
+                    </div>                </div>
+                <div class="index_projectsColumn">
+                    <div class="index_projectDescription">
+                        <div class="index_mac-window">
+                            <div class="index_title-bar">
+                                <div class="mac-button red"></div>
+                                <div class="mac-button yellow"></div>
+                                <div class="mac-button green"></div>
+                            </div>
+                            <div class="index_macContent">
+                                <pre class="terminal" data-text="Project Name:\nIRWA Chapter 72 Site Redesign\nDescription:\nThe IRWA Chapter 72 President reached out to me and asked if I would be willing to help rework their dated page.\nOf course I said yes, and we are currently working together to create something amazing!\nStay tuned for more :)"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a class="index_moreProjectsButton" href="pages/projects.html">- Check Out More -</a>
+            </nav>
+        </div>
     </section>
-
-
-
-
-
-
-
-    <div class="carousel-container">
-        <div class="index_skillsTitle poetsen-one-regular">
-            <h1 id="index_skillsTitle_My">My</h1>
-            <h1 id="index_skillsTitle_Skills">Skills</h1>
-        </div>
-        <div class="skills-carousel logos">
-            <div class="logo-container"><img src="/pictures/skills/apple.png" alt="Apple"></div>
-            <div class="logo-container"><img src="/pictures/skills/arch.png" alt="Arch Linux"></div>
-            <div class="logo-container"><img src="/pictures/skills/bash.png" alt="Bash"></div>
-            <div class="logo-container"><img src="/pictures/skills/burpsuite.png" alt="Burpsuite"></div>
-            <div class="logo-container"><img src="/pictures/skills/c.png" alt="C"></div>
-            <div class="logo-container"><img src="/pictures/skills/cpp.png" alt="C++"></div>
-            <div class="logo-container"><img src="/pictures/skills/centos.png" alt="CentOS Linux"></div>
-            <div class="logo-container"><img src="/pictures/skills/css.png" alt="CSS"></div>
-            <div class="logo-container"><img src="/pictures/skills/debian.png" alt="Debian Linux"></div>
-            <div class="logo-container"><img src="/pictures/skills/figma.png" alt="Figma"></div>
-            <div class="logo-container"><img src="/pictures/skills/html.png" alt="HTML"></div>
-            <div class="logo-container"><img src="/pictures/skills/javascript.png" alt="JavaScript"></div>
-            <div class="logo-container"><img src="/pictures/skills/kali.png" alt="Kali Linux"></div>
-            <div class="logo-container"><img src="/pictures/skills/linux.png" alt="Linux"></div>
-            <div class="logo-container"><img src="/pictures/skills/metasploit.png" alt="Metasploit"></div>
-            <div class="logo-container"><img src="/pictures/skills/paloalto.svg" alt="PaloAlto"></div>
-            <div class="logo-container"><img src="/pictures/skills/pfsense.png" alt="pfsense"></div>
-            <div class="logo-container"><img src="/pictures/skills/powershell.png" alt="Powershell"></div>
-            <div class="logo-container"><img src="/pictures/skills/python.png" alt="Python"></div>
-            <div class="logo-container"><img src="/pictures/skills/ubuntu.png" alt="Ubuntu Linux"></div>
-            <div class="logo-container"><img src="/pictures/skills/utm.png" alt="UTM"></div>
-            <div class="logo-container"><img src="/pictures/skills/virtualbox.png" alt="VirtualBox"></div>
-            <div class="logo-container"><img src="/pictures/skills/vmware.png" alt="VMWare"></div>
-            <div class="logo-container"><img src="/pictures/skills/windows.png" alt="Windows"></div>
-            <div class="logo-container"><img src="/pictures/skills/wireshark.png" alt="Wireshark"></div>
-        </div>
-        <div class="skills-carousel texts">
-            <div class="text-container"><p>Apple Products/OS</p></div>
-            <div class="text-container"><p>Arch Linux</p></div>
-            <div class="text-container"><p>Bash</p></div>
-            <div class="text-container"><p>Burpsuite</p></div>
-            <div class="text-container"><p>C</p></div>
-            <div class="text-container"><p>C++</p></div>
-            <div class="text-container"><p>CentOS Linux</p></div>
-            <div class="text-container"><p>CSS</p></div>
-            <div class="text-container"><p>Debian Linux</p></div>
-            <div class="text-container"><p>Figma</p></div>
-            <div class="text-container"><p>HTML</p></div>
-            <div class="text-container"><p>JavaScript</p></div>
-            <div class="text-container"><p>Kali Linux</p></div>
-            <div class="text-container"><p>Linux</p></div>
-            <div class="text-container"><p>Metasploit</p></div>
-            <div class="text-container"><p>PaloAlto</p></div>
-            <div class="text-container"><p>pfsense</p></div>
-            <div class="text-container"><p>Powershell</p></div>
-            <div class="text-container"><p>Python</p></div>
-            <div class="text-container"><p>Ubuntu Linux</p></div>
-            <div class="text-container"><p>UTM</p></div>
-            <div class="text-container"><p>VirtualBox</p></div>
-            <div class="text-container"><p>VMWare</p></div>
-            <div class="text-container"><p>Windows</p></div>
-            <div class="text-container"><p>Wireshark</p></div>
-        </div>
-    </div>
-
     <section id="sec3">
         <svg viewBox="0 0 1440 490">
             <path fill="#ffd586">

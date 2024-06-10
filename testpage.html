@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <title>Cameron's Home Page</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <script src="/scripts.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Cam's Corner</title>
+
 </head>
 <body class="fade_in">
-    <section id="index_veryTop">
-        <p>Hello! Please note that this website is currently under development and doesn't display properly on mobile</p>
-    </section>
     <div class="loader-wrapper">
         <div class="loader"></div>
     </div>
@@ -26,7 +28,7 @@
             <a href="/">Home</a>
             <a href="pages/projects.html">Projects</a>
             <a href="pages/links.html">Links</a>
-            <a href="#about_me" >About Me</a>
+            <a href="#index_aboutMe" >About Me</a>
             <a href="#index_contactMe">Contact Me</a>
         </nav>
         <div class="index">
@@ -114,19 +116,24 @@
                 </animate>
             </path>
         </svg>
-        <div id="about_me"></div>
-        <div class="index_aboutMe">
-            <div style="background-color: #fff5de;">
-                <div class="index_name">
-                    <h1 id="firstName">Cameron</h1>
-                    <h1 id="lastName">Ausmann</h1>
-                </div>
-                <div class="index_aboutMeBio">
-                    <div class="index_aboutMeRectangle">
-                        <p>My name is Cameron Ausmann and I'm currently pursuing a Bachelor of Science degree, majoring in Cyber Operations at Dakota State University. I have a passion for Front-End Web Development and Ethical Hacking, but I love all things technology and design. <br><br> Right now, I'm focusing on my internship and finishing my degree, but feel free to check out my <a href="pages/projects.html">Projects</a> page to see what I've been working on in my free time! Have any questions, comments, ideas, or just want to chat? Head down to the <a href="#index_contactMe">Contact Me</a> section to get in touch with me!</p>
+        <div id="index_aboutMe">
+            <div class="index_aboutMe">
+                <div class="index_aboutMeGrid">
+                    <div class="gridDisplay grid_item1">
+                        <p>My Name is</p>
+                        <h2>Cameron.</h2> 
+                        <p>It's Nice to Meet You!</p>
+                    </div>
+                    <img src="pictures/cam.jpg" class="grid_item2" style="width: 100%; height:auto;">
+                    <div class="gridDisplay grid_item3">
+                        <p>My passion for web development and ethical hacking drives me to explore all things technology and design. I'm currently pursuing a Bachelor of Science degree in Cyber Operations at Dakota State University, so please visit my Projects page to see what I’ve been working on. I hope you enjoy exploring my work as much as I enjoyed creating it!</p>
+                    </div>
+                    <img src="pictures/airplane.JPG" class="grid_item4" style="width: 100%; height:auto;">
+                    <div class="gridDisplay grid_item5">
+                        <h2>My Goal</h2>
+                        <p>I aim to use my skills to bring your ideas to life. There’s nothing more rewarding than seeing the excitement on someone’s face when our collaborative imaginations transform their vision into a reality.</p>
                     </div>
                 </div>
-                <img id="home_about-me" src="pictures/About_me_merge.jpg">          
             </div>
         </div>
     </section>
@@ -144,78 +151,62 @@
                 </animate>
             </path>
         </svg>
-    </section>
-
-
-
-
-
-
-
-    <section id="index_skills">
-        <div class="index_skillsTitle">
-            <h1 id="index_skillsTitle_My">My</h1>
-            <h1 id="index_skillsTitle_Skills">Skills</h1>
-        </div>       
-        <div class="skills-carousel">
-            <div><img src="/pictures/skills/apple.png" alt="Apple"><p>Apple Products/OS</p></div>
-            <div><img src="/pictures/skills/arch.png" alt="Arch Linux"><p>Arch Linux</p></div>
-            <div><img src="/pictures/skills/bash.png" alt="Bash"><p>Bash</p></div>
-            <div><img src="/pictures/skills/burpsuite.png" alt="Burpsuite"><p>Burpsuite</p></div>
-            <div><img src="/pictures/skills/c.png" alt="C"><p>C</p></div>
-            <div><img src="/pictures/skills/centos.png" alt="CentOS Linux"><p>CentOS Linux</p></div>
-            <div><img src="/pictures/skills/cpp.png" alt="C++"><p>C++</p></div>
-            <div><img src="/pictures/skills/css.png" alt="CSS"><p>CSS</p></div>
-            <div><img src="/pictures/skills/debian.png" alt="Debian Linux"><p>Debian Linux</p></div>
-            <div><img src="/pictures/skills/html.png" alt="HTML"><p>HTML</p></div>
-            <div><img src="/pictures/skills/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
-            <div><img src="/pictures/skills/kali.png" alt="Kali Linux"><p>Kali Linux</p></div>
-            <div><img src="/pictures/skills/linux.png" alt="Linux"><p>Linux</p></div>
-            <div><img src="/pictures/skills/metasploit.png" alt="Metasploit"><p>Metasploit</p></div>
-            <div><img src="/pictures/skills/paloalto.svg" alt="PaloAlto"><p>PaloAlto</p></div>
-            <div><img src="/pictures/skills/pfsense.png" alt="pfsense"><p>pfsense</p></div>
-            <div><img src="/pictures/skills/powershell.png" alt="Powershell"><p>Powershell</p></div>
-            <div><img src="/pictures/skills/python.png" alt="Python"><p>Python</p></div>
-            <div><img src="/pictures/skills/ubuntu.png" alt="Ubuntu Linux"><p>Ubuntu Linux</p></div>
-            <div><img src="/pictures/skills/utm.png" alt="UTM"><p>UTM</p></div>
-            <div><img src="/pictures/skills/virtualbox.png" alt="VirtualBox"><p>VirtualBox</p></div>
-            <div><img src="/pictures/skills/vmware.png" alt="VMWare"><p>VMWare</p></div>
-            <div><img src="/pictures/skills/windows.png" alt="Windows"><p>Windows</p></div>
-            <div><img src="/pictures/skills/wireshark.png" alt="Wireshark"><p>Wireshark</p></div>
+        <div class="index_projectsTitle">
+            <div class="contact-left-title">
+                <h2>My Projects</h2>
+                <hr>
+                <br><br><br>
+            </div>
         </div>
-          
-          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-          <script>
-            $(document).ready(function(){
-              $('.skills-carousel').slick({
-                slidesToShow: 6,
-                slidesToScroll: 0.75,
-                autoplay: true,
-                autoplaySpeed: 0,
-                speed: 1500,
-                arrows: false,
-                dots: false,
-                pauseOnHover: true,
-                responsive: [
-                  {
-                    breakpoint: 768,
-                    settings: {
-                      slidesToShow: 3
-                    }
-                  },
-                  {
-                    breakpoint: 480,
-                    settings: {
-                      slidesToShow: 1
-                    }
-                  }
-                ]
-              });
-            });
-          </script>
+        <div class="index_projects">
+            <div class="index_projectsRow">
+                <div class="index_projectsColumn">
+                    <div class="index_projectPicture">
+                        <img src="pictures/DiscordBot.png" alt="Screenshot of React.dc Discored Bio" class="blurImage">
+                        <a class="hoverButton" href="https://github.com/CAusmann/React.dc" target="_blank">Visit the GitHub!</a>
+                    </div>
+                </div>
+                <div class="index_projectsColumn">
+                    <div class="index_projectDescription">
+                        <div class="index_mac-window">
+                            <div class="index_title-bar">
+                                <div class="mac-button red"></div>
+                                <div class="mac-button yellow"></div>
+                                <div class="mac-button green"></div>
+                            </div>
+                            <div class="index_macContent">
+                                <pre class="terminal" data-text="Project Name:\nReact.dc\nDescription:\nAs an avid user of the 'regional_indicator' reactions in Discord, I wanted a way to quickly spell words on messages using them.\nI created this simple Discord Bot using Python to do just that!"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index_projectsRow">
+                <div class="index_projectsColumn">
+                    <div class="index_projectPicture">
+                        <img src="pictures/IRWA.png" alt="Screenshot of React.dc Discored Bio" class="blurImage">
+                        <a class="hoverButton">Stay Tuned ;)</a>
+                    </div>                </div>
+                <div class="index_projectsColumn">
+                    <div class="index_projectDescription">
+                        <div class="index_mac-window">
+                            <div class="index_title-bar">
+                                <div class="mac-button red"></div>
+                                <div class="mac-button yellow"></div>
+                                <div class="mac-button green"></div>
+                            </div>
+                            <div class="index_macContent">
+                                <pre class="terminal" data-text="Project Name:\nIRWA Chapter 72 Site Redesign\nDescription:\nThe IRWA Chapter 72 President reached out to me and asked if I would be willing to help rework their dated page.\nOf course I said yes, and we are currently working together to create something amazing!\nStay tuned for more :)"></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a class="index_moreProjectsButton" href="pages/projects.html">- Check Out More -</a>
+            </nav>
+        </div>
     </section>
-
     <section id="sec3">
         <svg viewBox="0 0 1440 490">
             <path fill="#ffd586">
