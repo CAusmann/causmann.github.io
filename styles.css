@@ -583,15 +583,15 @@ div::-webkit-scrollbar {
 }
 
 #links_picture {
-    width: auto; 
-    height: 100%;
+    overflow: hidden;
+    width: 85%; 
+    height: auto;
     mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik03MC4zLC0yMi4zQzc5LjksNi43LDY4LjgsNDMsNDguMSw1NS40QzI3LjUsNjcuOSwtMi42LDU2LjUsLTI2LjUsMzguN0MtNTAuMywyMC44LC02Ny44LC0zLjQsLTYyLjMsLTI2LjhDLTU2LjksLTUwLjEsLTI4LjQsLTcyLjYsMSwtNzIuOUMzMC40LC03My4yLDYwLjcsLTUxLjQsNzAuMywtMjIuM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
     mask-repeat: no-repeat;
     mask-position:center;
     mask-size: 150%;
     z-index: 1;
-    margin-left: -8%;
-    margin-top: 3%;
+    margin-top: 10%;
 }
 
 #links_scoochRight {
@@ -806,7 +806,7 @@ transition: transform 0.3s ease;
 
 .links_dots {
     position: relative;
-    margin-left: 5%;
+    margin-left: 2%;
     width: 200px;
     height: 625px;
     opacity: 0.8;
@@ -815,6 +815,7 @@ transition: transform 0.3s ease;
 
 .links_page {
     overflow-x: hidden;
+    overflow-y: scroll;
     color: white;
     background: linear-gradient(270deg, #a77ccb, #ee98c4, #ff4faac7, #d7a6ff);
     background-size: 400% 400%;
@@ -830,20 +831,23 @@ transition: transform 0.3s ease;
 }
 
 .links_map {
+    overflow-x: visible;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.links_map svg {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    top: 25%;
-    opacity: 0.5;
-    z-index: 1;
+.links_pictureDiv {
+    width: auto;
+    background-size: 110%;
+    background-image: url(pictures/linksBlob.png);
+    background-repeat: no-repeat;
+    background-position-x: 66%;
+    background-position-y: 20%;
+    background-clip: padding-box;
 }
 
 .links_macContent {
+    position: relative;
     color: black;
     display: flex;
     min-height: 0;
@@ -1036,12 +1040,6 @@ pre {
   
     .not-in-view {
         opacity: 0;
-    }
-}
-
-@media only screen and (min-width: 2000px) {
-    #links_picture {
-        margin-top: 2%;
     }
 }
 
