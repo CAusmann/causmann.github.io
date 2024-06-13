@@ -843,7 +843,6 @@ transition: transform 0.3s ease;
     background-repeat: no-repeat;
     background-position-x: 66%;
     background-position-y: 20%;
-    background-clip: padding-box;
 }
 
 .links_macContent {
