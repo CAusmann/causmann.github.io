@@ -30,10 +30,8 @@ window.onscroll = function() {
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("topBtn").style.display = "block";
-    document.getElementById("drop").style.display = "block";
   } else {
     document.getElementById("topBtn").style.display = "none";
-    document.getElementById("drop").style.display = "none";
   }
 }
 
