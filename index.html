@@ -24,7 +24,7 @@
     <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="pictures/up_arrow.png"></button>
     <div class="drop" id="drop"></div>
     <header class="index">
-        <nav>
+        <nav class="mainNav">
             <a href="/">Home</a>
             <a href="pages/projects.html">Projects</a>
             <a href="pages/links.html">Links</a>
@@ -33,6 +33,13 @@
         </nav>
         <div class="index">
             <div class="index_headerContainer">
+                <nav class="smallScreenNav">
+                    <a href="/">Home</a>
+                    <a href="pages/projects.html">Projects</a>
+                    <a href="pages/links.html">Links</a>
+                    <a href="#index_aboutMe" >About Me</a>
+                    <a href="#index_contactMe">Contact Me</a>
+                </nav>
                 <div class="index_headerHeadGraphic">
                     <svg id="blob2" viewBox="0 0 500 500" width="100%">
                         <path fill="#fcb126">
@@ -204,8 +211,8 @@
                     </div>
                 </div>
             </div>
-            <nav>
-                <a class="index_moreProjectsButton" href="pages/projects.html">- Check Out More -</a>
+            <nav class="index_projectsButtonDiv">
+                <a class="index_moreProjectsButton" href="pages/projects.html">Check Out More</a>
             </nav>
         </div>
     </section>

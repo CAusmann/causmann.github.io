@@ -50,7 +50,7 @@ nav {
 }
 
 nav a {
-    width: 100%;
+    width: auto;
     height: auto;
     position: relative;
     letter-spacing: 5px;
@@ -371,7 +371,6 @@ div::-webkit-scrollbar {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: 3%;
 }
 
 .index_aboutMeGrid {
@@ -499,6 +498,10 @@ div::-webkit-scrollbar {
     text-align: center;
     width: 100%;
     height: auto;
+}
+
+.smallScreenNav {
+    display: none;
 }
 
 .index_headerHeadGraphic {
@@ -899,8 +902,12 @@ pre {
     color: #fefefe !important;
 }
 
+.index_projectsButtonDiv {
+    width: 100%;
+}
+
 .index_moreProjectsButton {
-    width: 32%;
+    width: auto;
     font-weight: 500;
 }
 
@@ -1060,11 +1067,6 @@ pre {
         gap: 9px;
     }
 
-    .index_moreProjectsButton {
-        margin-top: -5%;
-        margin-bottom: -5%;        
-    }
-
     #topBtn::before {
         width: 200px;
         height: 200px;
@@ -1072,6 +1074,13 @@ pre {
 
     .projectsMac-window_left {
         width: 100%;
+    }
+
+    .mac-button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 8px;
     }
 }
 
@@ -1089,9 +1098,12 @@ pre {
     #sec2 svg {
         margin-top: -75px;
     }
+}
 
-    .index_moreProjectsButton {
-        width: 45%;
+@media only screen and (max-width: 700px) {
+    .mac-button {
+        width: 8px;
+        height: 8px;
     }
 }
 
@@ -1108,10 +1120,6 @@ pre {
         width: 90%;
     }
 
-    .index_moreProjectsButton {
-        margin-bottom: 10%;
-    }
-
     #sec2 svg {
         margin-top: -50px;
     }
@@ -1122,3 +1130,61 @@ pre {
 }
 
 
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .mainNav {
+        display: none;
+    }
+
+    .smallScreenNav {
+        display: block;
+        width: 10%;
+    }
+
+    .smallScreenNav a {
+        font-size: 1.5vw;
+    }
+
+    .index_welcomeContainer {
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .index_welcomeContainer h1 {
+        font-size: 3vw;
+    }
+
+    .index_headerMemoji {
+        display: none;
+    }
+
+    #blob1 {
+        left: 58%;
+        top: 26%;
+    }
+
+    #blob2 {
+        left: 48%;
+        top: 16%;
+    }
+
+    #blob3 {
+        left: 48%;
+        top: 50%;
+    }
+
+    .index_moreProjectsButton {
+        margin-bottom: 5%;
+    }
+
+    .index_aboutMeGrid {
+        width: 100%;
+    }
+}
