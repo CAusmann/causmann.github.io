@@ -38,7 +38,7 @@ body {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     height: auto;
     padding: 50px;
@@ -46,10 +46,12 @@ nav {
     text-align: center;
     font-size: 2vw;
     z-index: 9999;
+    align-items: center;
 }
 
 nav a {
-    display: inline-block;
+    width: 100%;
+    height: auto;
     position: relative;
     letter-spacing: 5px;
     margin: 15px 50px;
@@ -144,6 +146,8 @@ div::-webkit-scrollbar {
 }
 
 .title_container {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -169,15 +173,14 @@ div::-webkit-scrollbar {
 }
 
 .index_mac-window {
+    overflow: hidden;
     background-color: #1e1e1f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 45vw;
-    height: auto;
-    min-height: 50vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    max-height: 50vh;
+    padding-bottom: 20%;
 }
 
 .index_discordBot {
@@ -361,13 +364,19 @@ div::-webkit-scrollbar {
 }
 
 .grid_item5 h2 {
-    font-size: 0.85vw;
+    font-size: 2vw;
+}
+
+.index_aboutMe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
 }
 
 .index_aboutMeGrid {
     height: auto;
-    width: 60%;
-    margin: 0 auto;
+    width: 70%;
     display: grid;
     grid-template-areas:
       'myName myName myName myName myPic1 myPic1'
@@ -378,12 +387,19 @@ div::-webkit-scrollbar {
     padding: 10px;
     text-align: center;
     align-items: center;
-    justify-content: center;
 }
 
 .index_aboutMeBio {
     display: inline-block;
     width: 40%;
+}
+
+.index_projects {
+    overflow: hidden;
+}
+
+.index_projects nav {
+    width: 100%;
 }
 
 .index_projectsRow {
@@ -468,6 +484,7 @@ div::-webkit-scrollbar {
 }
 
 #index_aboutMe {
+    width: 100%;
     background-color: #fff5de;
     overflow-x: hidden;
     overflow-y: visible;
@@ -563,13 +580,14 @@ div::-webkit-scrollbar {
 }
 
 #links_picture {
-    height: 650px;
+    width: auto; 
+    height: 100%;
     mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik03MC4zLC0yMi4zQzc5LjksNi43LDY4LjgsNDMsNDguMSw1NS40QzI3LjUsNjcuOSwtMi42LDU2LjUsLTI2LjUsMzguN0MtNTAuMywyMC44LC02Ny44LC0zLjQsLTYyLjMsLTI2LjhDLTU2LjksLTUwLjEsLTI4LjQsLTcyLjYsMSwtNzIuOUMzMC40LC03My4yLDYwLjcsLTUxLjQsNzAuMywtMjIuM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
     mask-repeat: no-repeat;
     mask-position:center;
-    mask-size: 130%;
+    mask-size: 150%;
     z-index: 1;
-    margin-left: -12%;
+    margin-left: -8%;
 }
 
 #links_scoochRight {
@@ -606,7 +624,7 @@ div::-webkit-scrollbar {
 }
 
 #sec3 svg {
-    margin-top: -100px;
+    margin-top: -75px;
     transform: rotate(180deg);
 }
 
@@ -644,7 +662,7 @@ div::-webkit-scrollbar {
 }
 
 #topBtn:hover {
-background-color: #555;
+background-color: transparent;
 transform: scale(1.25);
 transition: transform 0.3s ease;
 }
@@ -663,6 +681,7 @@ transition: transform 0.3s ease;
 }
 
 .contact-container {
+    width: auto;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -685,7 +704,7 @@ transition: transform 0.3s ease;
 
 .contact-left-title hr {
     border: none;
-    width: 200px;
+    width: 70%;
     height: 5px;
     background-color: rgb(84, 84, 84);
     border-radius: 10px;
@@ -766,6 +785,8 @@ transition: transform 0.3s ease;
 
 .dot{
     margin-top: 75px;
+    margin-left: 5px;
+    margin-right: 5px;
     height: 75px;
     width: 75px;
     background-color: #fff;
@@ -811,9 +832,9 @@ transition: transform 0.3s ease;
 
 .links_map svg {
     position: absolute;
-    height: 800px;
-    top: 180px;
-    right: 30%;
+    width: 90%;
+    height: 90%;
+    top: 25%;
     opacity: 0.5;
     z-index: 1;
 }
@@ -836,7 +857,6 @@ transition: transform 0.3s ease;
     color: #fefefe !important;
     display: flex;
     flex-direction: column;
-    min-height: 0;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.15vw;
 }
@@ -880,6 +900,7 @@ pre {
 }
 
 .index_moreProjectsButton {
+    width: 32%;
     font-weight: 500;
 }
 
@@ -889,6 +910,7 @@ pre {
     content: "";
     display: block;
     height: 2px;
+    margin-top: 40px;
     left: 50%;
     position: absolute;
     background: #323938;
@@ -921,7 +943,7 @@ pre {
     align-self: center;
 }
 .projectsMac-window_left {
-    width: 75%;
+    width: 90%;
     box-sizing: border-box; 
     padding: 5px; 
 }
@@ -1008,3 +1030,95 @@ pre {
         opacity: 0;
     }
 }
+
+
+@media only screen and (max-width: 1100px) {
+    nav {
+        font-size: 2vh;
+    }
+
+
+    .index_aboutMeGrid {
+        width: 70%;
+        margin-bottom: 10%; 
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+
+    .index_aboutMeGrid {
+        width: 70%;
+        gap: 9px;
+    }
+
+    .index_moreProjectsButton {
+        margin-top: -5%;
+        margin-bottom: -5%;        
+    }
+
+    #topBtn::before {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projectsMac-window_left {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    nav a {
+        font-size: 1.5vh;
+    }
+
+    .index_aboutMeGrid {
+        width: 80%;
+        gap: 8px;
+    }
+
+    #sec2 svg {
+        margin-top: -75px;
+    }
+
+    .index_moreProjectsButton {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        margin-bottom: -10%;
+    }
+
+    nav a {
+        font-size: 1.25vh;
+    }
+
+    .index_aboutMeGrid {
+        width: 90%;
+    }
+
+    .index_moreProjectsButton {
+        margin-bottom: 10%;
+    }
+
+    #sec2 svg {
+        margin-top: -50px;
+    }
+
+    #sec3 svg {
+        margin-top: -50px;
+    }
+}
+
+
