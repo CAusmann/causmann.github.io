@@ -375,7 +375,7 @@ div::-webkit-scrollbar {
 
 .index_aboutMeGrid {
     height: auto;
-    width: 70%;
+    width: 55%;
     display: grid;
     grid-template-areas:
       'myName myName myName myName myPic1 myPic1'
@@ -1042,6 +1042,18 @@ pre {
     }
 }
 
+@media only screen and (min-width: 2400px) {
+    #sec2 svg {
+        margin-top: -6%
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #sec3 svg {
+        margin-top: -10%
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     nav {
         font-size: 2vh;
@@ -1131,15 +1143,6 @@ pre {
         margin-top: -50px;
     }
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 500px) {
     .mainNav {
