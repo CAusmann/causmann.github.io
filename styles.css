@@ -584,14 +584,14 @@ div::-webkit-scrollbar {
 
 #links_picture {
     overflow: hidden;
-    width: 85%; 
     height: auto;
     mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik03MC4zLC0yMi4zQzc5LjksNi43LDY4LjgsNDMsNDguMSw1NS40QzI3LjUsNjcuOSwtMi42LDU2LjUsLTI2LjUsMzguN0MtNTAuMywyMC44LC02Ny44LC0zLjQsLTYyLjMsLTI2LjhDLTU2LjksLTUwLjEsLTI4LjQsLTcyLjYsMSwtNzIuOUMzMC40LC03My4yLDYwLjcsLTUxLjQsNzAuMywtMjIuM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
     mask-repeat: no-repeat;
     mask-position:center;
-    mask-size: 150%;
+    mask-size: 140%;
     z-index: 1;
-    margin-top: 10%;
+    margin-left: -10%;
+    margin-top: 5%;
 }
 
 #links_scoochRight {
@@ -805,12 +805,11 @@ transition: transform 0.3s ease;
 }
 
 .links_dots {
-    position: relative;
-    margin-left: 2%;
     width: 200px;
     height: 625px;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 999;
+    margin-right: -3%;
 }
 
 .links_page {
@@ -834,15 +833,19 @@ transition: transform 0.3s ease;
     overflow-x: visible;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .links_pictureDiv {
+    display: flex;
+    justify-content: center;
     width: auto;
-    background-size: 110%;
+    height: 80%;    
+    background-size: 120%;
     background-image: url(pictures/linksBlob.png);
     background-repeat: no-repeat;
-    background-position-x: 66%;
-    background-position-y: 20%;
+    background-position-x: 45%;
+    margin-right: 2%;
 }
 
 .links_macContent {
