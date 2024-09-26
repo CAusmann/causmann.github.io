@@ -1,0 +1,785 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+
+/* All */
+
+:root {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a:link, 
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+.shadowRight {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.shadowLeft {
+    -webkit-box-shadow: 0px 5px 5px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 3px rgba(0,0,0,0.3);
+}
+
+.pageTitle {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Krona One", sans-serif;
+    width: 100%;
+    margin-top: -1.5%;
+}
+
+.pageTitle div {
+    position: relative;
+}
+
+.pageTitle div:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 41.35%;
+    height: 3.75px;
+    width: 75%;
+    margin-left: -39%;
+    border-radius: 25px;
+    background: rgb(248, 200, 27);
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100;
+    margin-top: 1%;
+    height: auto;
+}
+
+.backgroundImage {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.backgroundImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    z-index: -1;
+}
+
+.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    height: 130vw;
+    width: 100%;
+    margin-top: 4.75%;
+
+}
+
+.sectionTwoBackground {
+    position: relative;
+    height: 150vw;
+    overflow: hidden;
+    margin: 3.5%;
+    margin-top: 0%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.sectionTwoBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.sectionOne {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 48vw;
+    margin: 3.5%;
+    overflow: hidden;
+    position: relative;
+}
+
+.sectionOne header {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+
+
+/* Home Page */
+/* Home Page - Section One */
+
+#homeBackgroundImage {
+    background-image: url(Pictures/Backgrounds/badlandsBackground.jpg);
+}
+
+#navLogo {
+    width: 13vw;
+    margin-top: 6.5%;
+    margin-left: -50%;
+    
+}
+
+#navButtons {
+    display: flex; 
+    flex-direction: row;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+
+#navButtons div {
+    overflow-x: visible;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0 1.5vw;
+    text-align: center;
+    transition: transform 0.3s ease-in;
+}
+
+#navButtons div:before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    height: 3.75px;
+    width: 100%;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background: rgb(248, 200, 27);
+    transform-origin: right;
+    transition: transform 0.2s ease;
+}
+
+#navButtons div:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#joinButton {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: 600;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    width: 14vw;
+    height: 7vw;
+    margin-right: -6%;
+    margin-top: -1.25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+#joinButton a:visited {
+    color: black;
+}
+
+#joinButton div {
+    background-color: #d9d9d9;
+    border-radius: 3px;
+    padding: 1vw 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#joinButton div:hover {
+    background-color: #c1c1c1;
+}
+
+#mainTitle {
+    color: white;
+    margin-left: 10%;
+    font-size: 5vw;
+    font-family: "Krona One", sans-serif;
+}
+
+#mainTitle div:nth-child(3) {
+    color: rgb(250, 250, 250);
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: 1.5vw;
+}
+
+.spanGold {
+    color:  rgb(248, 200, 27);
+}
+
+
+
+/* Home Page - Section Two */
+#indexSectionTwo::before {
+    background-image: url(Pictures/Backgrounds/custerStatePark.jpg);
+}
+
+.meetTheTeam {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.teamTitle {
+    font-weight: 625;
+    font-size: 3vw;
+    margin-bottom: 2.5%;
+}
+
+.membersList {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.memberProfile {
+    position: relative;
+    aspect-ratio: 2.15 / 3;
+    margin: 2%;
+    overflow: hidden;
+    border-radius: 4%;
+    transition: transform 0.2s ease;
+}
+
+.memberProfile img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.memberNameTag {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: ivory;
+    color: rgb(44, 44, 44);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: left;
+    width: 12vw;
+    z-index: 99;
+    font-size: 1vw;
+}
+
+.memberNameTag div:nth-child(1) {
+    font-weight: bold;
+    margin: 1.5% 5%;
+}
+
+.memberNameTag div:nth-child(2) {
+    margin: 1.5% 5%;
+}
+
+.infoSectionLeft {
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    left: 0;
+    margin-top: 45%;
+    width: 48vw;
+    height: 20vw;
+    background-color: #D9D9D9;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.infoSectionRight {
+    z-index: 99;
+    position: absolute;
+    top: 125vw;
+    right: 0;
+    width: 48vw;
+    height: 28vw;
+    background-color: #D9D9D9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.infoSectionTitle {
+    margin-bottom: 3.5%;
+    font-size: 2.05vw;
+    font-weight: 575;
+    letter-spacing: 1px;
+}
+
+.infoSectionLeft div:nth-child(2) {
+    margin-left: 12%;
+    margin-right: 12%;
+    font-weight: 475;
+}
+
+#sponsorsSection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#sponsorsSection img:nth-child(1) {
+    width: auto;
+    height: 20vw;
+    margin-top: 50%;
+    margin-left: -50%;
+}
+
+#sponsorsBackground {
+    position: absolute;
+    bottom: 0;
+    background-color: #545454;
+    border-color: #414141;
+    border-style: solid;
+    border-bottom: none;
+    width: 80vw;
+    height: 25vw;
+}
+
+.marquee {
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+}
+  
+.marqueeContent {
+    margin-top: 14%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll 10s linear infinite;
+}
+
+.marqueeContent img {
+    width: 1vw;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+
+/* Footer */
+#footer {
+    font-family: "Inter", sans-serif;
+    color: white;
+    width: 100%;
+    height: auto;
+    background-color: #3D3D3D;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    font-weight: bold;
+    margin-top: 5%;
+    z-index: 99;
+}
+
+#footerContainer {
+    width: auto;
+    height: auto;
+    margin-left: -0.5%;
+}
+
+#footer img {
+    width: 18vw;
+}
+
+#footer div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-right: 3%;
+}
+
+.divider {
+    border-left: 0.3vw solid rgb(248, 200, 27);
+    height: 12vw;
+    border-radius: 10px;
+    margin-right: 6%;
+}
+
+#footerButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15vw;
+}
+
+#footerButtons a {
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    transition: transform 0.2s ease-in;
+}
+
+#footerButtons a:before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background: rgb(248, 200, 27);
+    transform-origin: right;
+    transition: transform 0.2s ease;
+}
+
+#footerButtons a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#footerJoinButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    color: white;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: gray;
+    padding: 3%;
+    font-size: 1.15vw;
+    transition: transform 0.2s ease-in;
+}
+
+#contactInfo {
+    font-size: 1.15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#contactInfo div:nth-child(1) {
+    text-decoration: underline;
+    display: flex;
+    margin-bottom: 10%;
+}
+
+#footerCopyright {
+    position: absolute;
+    right: 1%;
+    margin-top: 18%;
+    font-size: 0.8vw;
+}
+
+
+/* Events Page */
+/* Events Page - Section One */
+#eventsBackgroundImage::before {
+    background-image: url(Pictures/Backgrounds/roadBackground.jpg);
+}
+
+#eventsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    left: 0;
+    width: 25vw;
+    height: 30vw;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.eventItem {
+    margin-top: 5%;
+    font-size: 0.85vw;
+    display: flex;
+    align-items: center;
+    background-color: #989898;
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.eventDetails {
+    margin-left: 16.5%;
+}
+
+.eventDate {
+    background-color: white;
+    position: absolute;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 2.75%;
+    height: 5.5%;
+    border-radius: 5px;
+}
+
+.eventMonth {
+    font-size: 1vw;
+    font-weight: 650;
+    color: rgb(242, 54, 54);
+}
+
+.eventDay {
+    font-size: 0.85vw;
+    font-weight: 550;
+}
+
+#eventsAdsWrapper {
+    display: flex;
+    width: 68.1%;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+#eventsAds {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+
+
+#eventsAds img{
+    flex: 0 0 auto;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 1.75%;
+    margin-right: 1.75%;
+    transition: transform 0.2s ease-in;
+}
+
+
+/* About Us */
+/* About Us - Section One */
+#aboutUsBackgroundImage::before{
+    background-image: url(Pictures/Backgrounds/wheatBackground.jpg);
+}
+
+#teamMissionStatement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    color: white;
+    font-size: 1.1vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#teamPicture {
+    width: 62%;
+    border-radius: 5px;
+}
+
+/* About Us - Section Two */
+
+#aboutUsSectionTwo::before {
+    background-image: url(Pictures/Backgrounds/dignityStatue.jpg);
+}
+
+#boardTitle {
+    color: white;
+}
+
+#committeeTitle {
+    margin-top: 8%;
+    color: white;
+}
+
+
+/* News */
+/* News - Section One */
+#newsBackgroundImage::before {
+    background-image: url(Pictures/Backgrounds/blackHillsNewsBackground.jpg);
+}
+
+.newsContentSection {
+    width: 40vw;
+    height: 30vw;
+    margin: 1.5%;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#newsAnnouncements::before,
+#newsAwards::before {
+    font-size: 1.75vw;
+    padding-top: 1%;
+    width: 100%;
+    height: 9%;
+    background-color: #a9a9a9;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 4%;
+}
+
+#newsAnnouncements::before {
+    content: " - Announcements - ";
+}
+
+#newsAwards::before {
+    content: " - Awards - ";
+}
+
+.newsItemContainer {
+    background-color: #c1c1c1;
+    width: calc(100% - 8%);
+    width: calc(100% - 8%);
+    margin: 0% 4% 4% 4%;
+    flex: 0 0 auto;
+    border-radius: 5px;
+}
+
+.newsItemTitle {
+    font-size: 1.5vw;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: 1.5%;
+    margin-right: 3%;
+}
+
+.newsItemImage {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.newsItemImage img {
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.newsItemContent {
+    font-size: 1vw;
+    margin-top: 1.5%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    margin-right: 3%;
+}
+
+
+
+/* Resources */
+/* Resources - Section One */
+#resourcesBackgroundImage::before {
+    background-image: url(Pictures/Backgrounds/badlandsBackground.jpg);
+}
+
+/* Resources - Section Two */
+#resourcesSectionTwo::before {
+    background-image: url(Pictures/Backgrounds/mount-rushmore-national-monument-55476_1920.jpg);
+}
+
+#resourcesSectionTwoTitle {
+    margin-top: 5%;
+}
